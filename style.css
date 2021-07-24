@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    -moz-osx-font-smoothing: grayscale;   /* Firefox */
+    -webkit-font-smoothing: antialiased; /* WebKit  */
+    background-color: #33333D;
+}
+
+.base_ui {
+  background-color: #2a2c36;
+}
+
+.white_text {
+  color: white;
+}
+
+.base_gray {
+  color: #C4C4C4;
+/* contact@libtea.club */
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 34px;
+/* identical to box height, or 170% */
+}
+
+.base_button {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.20);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header_container {
+  width: 100%;
+  position: relative;
+  height: 430px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.header_container .back_rectangle {
+  margin-left: 40px;
+  width: 355px;
+  transform: rotate(10deg);
+  height: 1000px;
+  margin-top: -41px;
+  background-color: #F8D39D;
+}
+
+.header_container .content {
+  z-index: 100;
+  max-width: 1250px;
+  display: flex;
+  align-items: center;
+}
+
+.header_container .content .logo {
+  background-image: url("images/logo_done_done.svg");
+  min-width: 413px;
+  height: 538px;
+  background-size: 100%;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  filter: invert(1);
+}
+
+.header_container .content .main_header {z-index: 101;width: 380px;margin-left: 45px;}
+
+.header_container .content .main_header .title {font-family: Yanone Kaffeesatz;font-size: 60px;font-weight: 600;}
+
+.header_container .content .main_header .description {font-family: Ubuntu Condensed;font-size: 25px;width: 378px;line-height: 35px;margin-top: 12px;}
+
+.header_container .content .main_header .main_buttons {display: flex;margin-top: 30px;}
+
+.header_container .content .main_header .main_buttons .join_button {display: flex;width: 165px;height: 54px;background-color: #5F607B;justify-content: center;align-items: center;margin-right: 20px;}
+
+.header_container .content .main_header .main_buttons .join_button .icon {
+  filter: invert(1);
+  width: 31px;
+  height: 25px;
+  margin-right: 13px;
+  background-image: url("images/user-plus-solid.svg");
+}
+
+.header_container .content .main_header .main_buttons .join_button .text {font-family: 'Ubuntu';font-weight: 700;color: #ffffff;font-size: 17px;}
+
+.header_container .content .main_header .main_buttons .support_button {background-color: white;height: 54px;width: 190px;display: flex;justify-content: center;align-items: center;border-radius: 5px;}
+
+.header_container .content .main_header .main_buttons .support_button .icon {
+  width: 31px;
+  height: 31px;
+  margin-right: 12px;
+  background-image: url("images/rouble.svg");
+}
+
+.header_container .content .main_header .main_buttons .support_button .text {font-family: 'Ubuntu';font-weight: 700;color: #2A2C36;font-size: 17px;}
+
+.contacts_container {height: 72px;border-top: #ffffff1f 1px solid;border-bottom: #ffffff1f 1px solid;display: flex;align-items: center;justify-content: center;}
+
+.contacts_container .contact_us {width: 70%;max-width: 980px;}
+
+.contacts_container .social {
+    display: flex;
+}
+
+.contacts_container .social .icon {margin: 8px;filter: invert(78%) brightness(100%) contrast(100%);width: 28px;height: 28px;background-repeat: no-repeat;background-position: center;}
+
+
+.contacts_container .social .telegram {
+  background-image: url("images/telegram-plane-brands.svg")
+}
+
+.contacts_container .social .twitter {
+  background-image: url("images/twitter-brands.svg")
+}
+
+.contacts_container .social .instagram {
+  background-image: url("images/instagram-brands.svg")
+}
+
+.contacts_container .social .vk {
+  background-image: url("images/vk-brands.svg")
+}
+
+.contacts_container .social .facebook {
+  background-image: url("images/facebook-brands.svg")
+}
+
+.contacts_container .social .youtube {
+  background-image: url("images/youtube-brands.svg")
+}
