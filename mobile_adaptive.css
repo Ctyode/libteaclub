@@ -263,7 +263,9 @@
 
 .about_us_mobile .subscribe {}
 
-.about_us_mobile .subscribe .secondary_text  {}
+.about_us_mobile .subscribe .secondary_text  {
+    margin: 24px;
+}
 
 .about_us_mobile .subscribe .social {}
 
@@ -286,7 +288,7 @@
 
 .about_us_mobile .pictures_to_send_and_say_us .and_you .title {}
 
-  .photo {object-fit: cover;height: 200px;width: 100%;border-radius: 0px;box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);}
+  .photo {object-fit: cover;/* height: 200px; */width: 100%;border-radius: 0px;box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);}
 
   #mobile1 {width: 100%;height: 200px;box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);margin-left: -25px;}
 
@@ -305,10 +307,11 @@
   #mobile8 {box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
 
   #mobile9 {
-    height: 100px;
-    width: 432px;
+    width: 100%;
     box-shadow: none;
-    margin: 24px;
+    box-sizing: border-box;
+    padding: 24px;
+    object-fit: contain;
 }
   #mobile10 {width: 485px;height: 256px;box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);}
 
@@ -331,4 +334,13 @@
     color: rgba(255, 255, 255, 0.69);
   }
 
+}
+
+.youtube_video {
+  width: 100%;
+}
+
+.youtube_video .youtube_iframe {
+  width: 100%;
+  height: 100%;
 }
