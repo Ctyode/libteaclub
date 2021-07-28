@@ -412,82 +412,137 @@ body {
 
 .header_mobile { display:none;}
 
-.donate {}
+.donate {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  width: 1031px;
+  margin: 64px auto 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 26px;
+  padding: 53px 0 0 0;
+  border: solid #ffffff10;
+  border-width: 1px 0 0 0;
+}
 
 .donate .text_container {}
 
-.donate .crypto {
-    display: flex;
+.donate .text_container .title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 25px;
+  align-items: center;
+  color: #FFFFFF;
 }
 
-.donate .bitcoin_container {
-    background-color: white;
-    border-radius: 5px;
-    width: 164px;
-    height: 222px;
+.donate .cards {
+  display: grid;
+  row-gap: 16px;
+  font-family: Ubuntu Condensed;
+  font-style: normal;
+  font-weight: normal;
+  color: #33333D;
 }
 
-.donate .ethereum_container {
-    background-color: white;
-    border-radius: 5px;
-    width: 164px;
-    height: 222px;
+.cards .sberbank,
+.cards .tinkoff {
+  display: grid;
+  grid-template-areas:
+    'a b'
+    'a c'
+  ;
+  grid-template-columns: 102px 1fr;
+  column-gap: 26px;
+  background-color: white;
+  border-radius: 5px;
+  width: 392px;
+  align-items: center;
 }
 
-.donate .ethereum_container .icon  {}
-
-.donate .ethereum_container .title  {}
-
-.donate .ethereum_container .qr_code  {}
-
-.donate .cards {}
-
-.donate .sberbank {
-    background-color: white;
-    border-radius: 5px;
-    width: 392px;
-    display: flex;
-    height: 102px;
+.cards .icon {
+  grid-area: a;
+  background-color: aqua;
+  border-radius: 5px 0 0 5px;
+  width: 102px;
+  height: 102px;
 }
 
-.donate .sberbank .icon, .donate .tinkoff .icon {
-    background-color: aqua;
-    width: 100px;
-    height: 100px;
+.cards .title {
+  grid-area: b;
+}
+
+.cards .number {
+  grid-area: c;
 }
 
 .donate .sberbank .icon {
 
 }
 
- .donate .tinkoff .icon {
+.donate .tinkoff .icon {
 
- }
-
-.donate .sberbank .title, .donate .tinkoff .title {
-    font-family: Ubuntu Condensed;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 23px;
-    display: flex;
-    color: #33333D;
 }
 
-.donate .sberbank .number, .donate .tinkoff .number  {
-    font-family: Ubuntu Condensed;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 23px;
-    display: flex;
-    color: #33333D;
+.donate .crypto {
+  display: grid;
+  grid-template-columns: 164px 164px;
+  column-gap: 32px;
 }
 
-.donate .tinkoff {
-    background-color: white;
-    border-radius: 5px;
-    width: 392px;
-    height: 102px;
-    display: flex;
+.donate .crypto_container {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 18px;
+  border-radius: 5px;
+  width: 164px;
+  height: 222px;
+
+  display: grid;
+  grid-template-areas:
+    'a b'
+    'c c'
+  ;
+
+  grid-template-columns: 38px 1fr;
+  grid-template-rows: 38px 1fr;
+  row-gap: 16px;
+  column-gap: 16px;
+}
+
+.donate .crypto_container .icon {
+  grid-area: a;
+
+}
+
+.donate .crypto_container .title {
+  grid-area: b;
+  color: #33333D;
+}
+
+.donate .crypto_container .qr_code {
+  grid-area: c;
+}
+
+.donate .crypto_text {
+  font-family: 'Ubuntu Condensed';
+  font-size: 25px;
+  row-gap: 24px;
+}
+
+.donate .crypto_text_a {
+  margin-bottom: 24px;
+}
+
+.donate .crypto_text_a .title {
+  margin-bottom: 16px;
+  font-size: 25px;
+}
+
+.donate .crypto_text_a .number {
+  font-size: 20px;
 }
