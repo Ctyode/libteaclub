@@ -349,10 +349,12 @@
     </section>
 
     <script>
-      document.querySelectorAll(".about_us_mobile .youtube_video")
-        .forEach(video => {
-          video.style.height = `${video.clientWidth * 9/16}px`;
-        });
+      window.addEventListener("resize", () => {
+        document.querySelectorAll(".about_us_mobile .youtube_video")
+          .forEach(video => {
+            video.style.height = `${video.clientWidth * 9/16}px`;
+          });
+      });
     </script>
 
   </body>
