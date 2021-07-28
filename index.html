@@ -88,7 +88,7 @@
 
           <section class="content_container">
             <div class="youtube_video">
-              <iframe width="442" height="249" src="https://www.youtube.com/embed/FfvHS-CmV6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/FfvHS-CmV6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
             <section class="articles">
@@ -247,7 +247,7 @@
 
         <section class="content_container">
           <div class="youtube_video">
-            <iframe width="442" height="249" src="https://www.youtube.com/embed/FfvHS-CmV6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="youtube_iframe" src="https://www.youtube.com/embed/FfvHS-CmV6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
           <section class="articles">
@@ -301,7 +301,7 @@
 
         <section class="help">
           <div class="youtube_video">
-            <iframe width="442" height="249" src="https://www.youtube.com/embed/NzViM2ToNK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="youtube_iframe" src="https://www.youtube.com/embed/NzViM2ToNK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="secondary_text">Перед массовыми протестами мы пишем и публикуем инструкции, которые помогут в сложной ситуации, а наш юрист проводил несколько онлайн-вебинаров, где бесплатно консультировал желающих. </div>
 
@@ -347,6 +347,13 @@
         </section>
       </section>
     </section>
+
+    <script>
+      document.querySelectorAll(".about_us_mobile .youtube_video")
+        .forEach(video => {
+          video.style.height = `${video.clientWidth * 9/16}px`;
+        });
+    </script>
 
   </body>
 </html>
