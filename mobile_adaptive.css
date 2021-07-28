@@ -1,0 +1,334 @@
+@media only screen and (max-width: 600px) {
+
+  .main_container {
+    display: block;
+  }
+
+  .contacts_container {
+    display: none;
+  }
+
+  .about_us_mobile {
+    overflow: visible;
+  }
+
+  .header_mobile {display: block;}
+
+  .header_container {display: none !important;}
+
+  .header_mobile .main_header .back_rectangle {
+    background-color: #f8d39d;
+    width: 10px;
+    height: 80px;
+    margin-left: 63px;
+    transform: rotate(10deg);
+  }
+
+  .header_mobile .main_header {
+    background-color: #262B2B;
+    width: 307px;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+    clip-path: polygon(0 0, 100% 1%, 95% 100%, 0% 100%);
+  }
+
+  .header_mobile .main_header .logo {
+    background-image: url("images/logo_done_done.svg");
+    min-width: 38px;
+    height: 48px;
+    background-position: center;
+    background-repeat: inherit;
+    filter: invert(1);
+    margin-left: 25px;
+    margin-right: 23px;
+  }
+
+  .header_mobile .main_header .title {
+    font-family: Yanone Kaffeesatz;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 35px;
+    display: flex;
+    margin-top: 5px;
+    color: #FFFFFF;
+  }
+
+  .header_mobile .content {margin: 23px;}
+
+  .header_mobile .content .description {
+    font-family: Ubuntu Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 22px;
+    width: 280px;
+    margin-top: 20px;
+}
+
+  .header_mobile .content .main_buttons {margin-top: 20px;}
+
+  .header_mobile .content .main_buttons .join_button {
+  background: #5F607B;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  height: 54px;
+  margin-bottom: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .header_mobile .content .main_buttons .support_button {
+    background: #FFFFFF;
+    height: 54px;
+    border-radius: 5px;
+    height: 54px;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+  .header_mobile .content .main_buttons .join_button .icon {
+  filter: invert(1);
+  width: 31px;
+  height: 25px;
+  margin-right: 13px;
+  background-image: url("images/user-plus-solid.svg");
+}
+
+  .header_mobile .content .main_buttons .join_button .text {font-family: 'Ubuntu';font-weight: 700;color: #ffffff;font-size: 17px;}
+
+  .header_mobile .content .main_buttons .support_button .text {font-family: 'Ubuntu';font-weight: 700;color: #2A2C36;font-size: 17px;}
+
+
+  .header_mobile .content .main_buttons .support_button .icon {
+  width: 31px;
+  height: 31px;
+  margin-right: 12px;
+  background-image: url("images/rouble.svg");
+}
+
+.about_us {
+  display: none;
+}
+
+.about_us_mobile .description {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 24px;
+}
+
+.about_us_mobile .lectures .text_container {
+    margin: 24px;
+}
+
+.about_us_mobile .lectures {
+
+}
+
+#text_container1 {margin: 24px;}
+
+.about_us_mobile .lectures .text_container .title {/* Борьба за свободные выборы */
+    width: 254px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+/* or 187% */
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.about_us_mobile .lectures .text_container .secondary_text {
+
+/* Чтобы наши принципы были реализованы на практике, мы поддерживаем близких нам кандидатов и сами становимся депутатами. К сожалению, мы встречаем противодействие со стороны действующей власти. Каждый год мы сталкиваемся с фальсификациями на выборах, а участницу Чайного Клуба Светлану Уткину и вовсе незаконно лишили депутатского мандата по указу губернатора. */font-family: Ubuntu;font-style: normal;font-weight: normal;font-size: 14px;line-height: 20px;
+/* or 143% */color: rgba(255, 255, 255, 0.69);}
+
+.about_us_mobile .lectures .secondary_text {
+
+}
+
+.secondary_text {
+
+}
+
+.about_us_mobile .elections {}
+
+.about_us_mobile .elections .text_container  {margin: 24px;}
+
+.about_us_mobile .elections .text_container .title {
+}
+
+
+.about_us_mobile .elections .secondary_text {
+
+}
+
+.about_us_mobile .opinion {
+    margin: 24px;
+}
+
+.about_us_mobile .opinion .title {}
+
+.about_us_mobile .opinion .secondary_text {
+
+}
+
+.about_us_mobile .opinion .content_container {margin-top: 24px;}
+
+.about_us_mobile .opinion .content_container .youtube_video {
+
+}
+
+.about_us_mobile .opinion .content_container .articles {
+    margin-top: 17px;
+}
+
+.about_us_mobile .opinion .content_container .articles .article {background-color: white;padding: 17px 20px;margin-bottom: 13px;font-size: 15px;border-radius: 5px;display: flex;text-decoration: none;align-items: center;color: inherit;font-family: 'Ubuntu';box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);}
+
+.about_us_mobile .opinion .content_container .articles .article .icon {
+
+}
+
+.about_us_mobile .rallies {}
+
+.about_us_mobile .rallies .text_container {
+    margin: 24px;
+}
+
+.about_us_mobile .rallies .text_container .title {}
+
+.about_us_mobile .rallies .text_container .secondary_text {}
+
+.about_us_mobile .rallies .photo_container_1 {
+    display: flex;
+}
+
+.about_us_mobile .rallies .photo_container_2 {}
+
+.about_us_mobile .rallies {}
+
+.about_us_mobile .aid {}
+
+.about_us_mobile .aid .container {
+    margin: 24px;
+}
+
+.about_us_mobile .aid .text_container {}
+
+.about_us_mobile .aid .text_container .secondary_text {}
+
+.about_us_mobile .aid .text_container .title {}
+
+.about_us_mobile .aid .red_button {}
+
+.about_us_mobile .aid .red_button .red_button_description {
+    margin: 24px;
+}
+
+.about_us_mobile .aid .red_button .secondary_text {}
+
+.about_us_mobile .aid .help {
+    margin: 24px;
+}
+
+.about_us_mobile .aid .help .secondary_text {
+    margin-bottom: 30px;
+}
+
+.about_us_mobile .pictures_to_send_and_say_us {}
+
+.about_us_mobile .pictures_to_send_and_say_us .title {}
+
+
+.about_us_mobile .pictures_to_send_and_say_us .us {}
+
+.photo_us {}
+
+.contact_us a {
+  text-decoration: none;
+  color: white;
+}
+
+.about_us_mobile .subscribe {}
+
+.about_us_mobile .subscribe .secondary_text  {}
+
+.about_us_mobile .subscribe .social {}
+
+
+.about_us_mobile .pictures_to_send_and_say_us .and_you {}
+
+.about_us_mobile .pictures_to_send_and_say_us .and_you .join_button {}
+
+.about_us_mobile .pictures_to_send_and_say_us .and_you .join_button .icon {
+  filter: invert(17%);
+  width: 31px;
+  height: 25px;
+  margin-right: 13px;
+  background-image: url("images/user-plus-solid.svg");
+  background-repeat: no-repeat;
+}
+
+.about_us_mobile .pictures_to_send_and_say_us .and_you .join_button .text {font-family: 'Ubuntu';font-weight: 700;color: #2A2C36;font-size: 17px;}
+
+
+.about_us_mobile .pictures_to_send_and_say_us .and_you .title {}
+
+  .photo {object-fit: cover;height: 200px;width: 100%;border-radius: 0px;box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);}
+
+  #mobile1 {width: 100%;height: 200px;box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);margin-left: -25px;}
+
+  #mobile2 {box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
+
+  #mobile3 {box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
+
+  #mobile4 {width: 50%;height: 214px;border-radius: 5px;margin: 10px 5px;}
+
+  #mobile5 {width: 50%;height: 214px;border-radius: 5px;margin: 10px;}
+
+  #mobile6 {}
+
+  #mobile7 {}
+
+  #mobile8 {box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
+
+  #mobile9 {
+    height: 100px;
+    width: 432px;
+    box-shadow: none;
+    margin: 24px;
+}
+  #mobile10 {width: 485px;height: 256px;box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);}
+
+  .about_us_mobile .title {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+  }
+
+  .about_us_mobile .secondary_text {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.69);
+  }
+
+}

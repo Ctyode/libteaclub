@@ -109,30 +109,30 @@ body {
     display: flex;
 }
 
-.contacts_container .social .icon {margin: 8px;filter: invert(78%) brightness(100%) contrast(100%);width: 28px;height: 28px;background-repeat: no-repeat;background-position: center;}
+.social .icon {margin: 8px;filter: invert(78%) brightness(100%) contrast(100%);width: 28px;height: 28px;background-repeat: no-repeat;background-position: center;}
 
 
-.contacts_container .social .telegram {
+.social .telegram {
   background-image: url("images/telegram-plane-brands.svg")
 }
 
-.contacts_container .social .twitter {
+.social .twitter {
   background-image: url("images/twitter-brands.svg")
 }
 
-.contacts_container .social .instagram {
+.social .instagram {
   background-image: url("images/instagram-brands.svg")
 }
 
-.contacts_container .social .vk {
+.social .vk {
   background-image: url("images/vk-brands.svg")
 }
 
-.contacts_container .social .facebook {
+.social .facebook {
   background-image: url("images/facebook-brands.svg")
 }
 
-.contacts_container .social .youtube {
+.social .youtube {
   background-image: url("images/youtube-brands.svg")
 }
 
@@ -154,18 +154,37 @@ body {
 
 .about_us .lectures {width: 1050px;display: flex;left: 0;right: 0;margin: auto;flex-wrap: wrap;}
 
-.about_us .lectures .photo {object-fit: cover;border-radius: 5px;}
+.photo {object-fit: cover;border-radius: 5px;}
 
 #photo1 {width: 566px;height: 271px;box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);margin-left: -25px;}
 
-#photo2 {margin-top: -51px;width: 548px;height: 283px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
+#photo2 {margin-top: -40px;width: 548px;height: 283px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
 
-#photo3 {width: 498px;height: 332px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
+#photo3 {width: 498px;height: 332px;margin-left: -20px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
+
+#photo4 {width: 272px;height: 214px;margin-right: 15px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
+
+#photo5 {width: 237px;height: 214px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
+
+#photo6 {width: 446px;height: 298px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
+
+#photo7 {width: 530px;height: 298px;margin-left: 19px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
+
+#photo8 {width: 416px;height: 220px;margin-top: 32px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
+
+#photo9 {width: 355px;height: 83px;margin-left: 80px;margin-top: 10px;}
+#photo10 {width: 485px;height: 256px;box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);}
 
 
 .about_us .lectures .text_container {
     margin-left: 45px;
-    margin-top: 41px;
+    margin-top: 13px;
+}
+
+#text_container1 {
+    margin-left: 24px;
+    margin-top: 39px;
+    margin-right: 55px;
 }
 
 .about_us .lectures .text_container .title {margin-bottom: 14px;font-family: Ubuntu;font-style: normal;font-weight: normal;font-size: 22px;line-height: 34px;text-align: -webkit-match-parent;}
@@ -179,7 +198,7 @@ body {
 .about_us .lectures .secondary_text {
   line-height: 26px;
   margin: 0;
-  margin-top: 50px;
+  margin-top: 57px;
   margin-right: 63px;
   margin-left: 26px;
   width: 413px;
@@ -193,7 +212,12 @@ body {
   font-size: 16px;
 }
 
-.about_us .elections {display: flex;left: 0;right: 0;margin: auto;width: 1050px;}
+.about_us .elections {display: flex;left: 0;right: 0;margin: auto;width: 1050px;margin-top: 70px;}
+
+.about_us .elections .text_container  {
+  margin-top: 50px;
+  margin-left: 51px;
+}
 
 .about_us .elections .text_container .title {
   margin-bottom: 14px;font-family: Ubuntu;font-style: normal;font-weight: normal;font-size: 22px;line-height: 34px;text-align: -webkit-match-parent;
@@ -203,10 +227,10 @@ body {
 .about_us .elections .secondary_text {
   line-height: 26px;
   margin: 0;
-  width: 413px;
+  width: 461px;
 }
 
-.about_us .opinion {left: 0;right: 0;margin: auto;width: 1050px;}
+.about_us .opinion {left: 0;right: 0;margin: auto;width: 1050px;margin-top: 70px;}
 
 .about_us .opinion .title {
   margin-bottom: 14px;
@@ -227,7 +251,9 @@ body {
 }
 
 .about_us .opinion .content_container {
+  margin-top: 40px;
   display: flex;
+  justify-content: center;
 }
 
 .about_us .opinion .content_container .youtube_video {
@@ -235,16 +261,17 @@ body {
   overflow: hidden;
 }
 
-.about_us .opinion .content_container .articles {
-
-}
+.about_us .opinion .content_container .articles {margin-left: 25px;}
 
 .about_us .opinion .content_container .articles .article {
-  margin: 16px;
   background-color: white;
-  padding: 15px;
+  padding: 17px 20px;
+  margin-bottom: 22px;
+  font-size: 15px;
   display: flex;
+  text-decoration: none;
   align-items: center;
+  color: inherit;
   font-family: 'Ubuntu';
   border-radius: 5px;
   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
@@ -259,3 +286,125 @@ body {
   background-position: center;
   margin-right: 18px;
 }
+
+.about_us .rallies {margin: auto;display: flex;flex-wrap: wrap;width: 1050px;}
+
+.about_us .rallies .text_container {width: 449px;margin-right: 18px;}
+
+.about_us .rallies .text_container .title {margin-bottom: 14px;font-family: Ubuntu;font-style: normal;font-weight: normal;font-size: 22px;line-height: 34px;text-align: -webkit-match-parent;}
+
+.about_us .rallies .text_container .secondary_text {line-height: 26px;margin: 0;width: 438px;}
+
+.about_us .rallies .photo_container_1 {}
+
+.about_us .rallies .photo_container_2 {display: flex;margin-top: 15px;}
+
+.about_us .rallies {display: flex;flex-wrap: wrap;width: 1050px;margin-top: 40px;justify-content: center;}
+
+.about_us .aid {display: flex;flex-wrap: wrap;width: 972px;margin: auto;margin-top: 68px;}
+
+.about_us .aid .container {
+  display: flex;
+}
+
+.about_us .aid .text_container {width: 432px;}
+
+.about_us .aid .text_container .secondary_text {
+    line-height: 26px;
+}
+
+.about_us .aid .text_container .title {margin-bottom: 14px;font-family: Ubuntu;font-style: normal;font-weight: normal;font-size: 22px;line-height: 34px;}
+
+.about_us .aid .red_button {display: flex;width: 948px;}
+
+.about_us .aid .red_button .red_button_description {width: 400px;margin-left: 100px;margin-top: -50px;}
+
+.about_us .aid .red_button .secondary_text {line-height: 26px;margin: 0;width: 443px;}
+
+.about_us .aid .help {
+  display: flex;
+  width: 984px;
+  margin-top: -107px;
+}
+
+.about_us .aid .help .secondary_text {margin-top: 144px;line-height: 26px;width: 429px;margin-right: 67px;}
+
+.about_us .pictures_to_send_and_say_us {width: 1031px;margin: auto;}
+
+.about_us .pictures_to_send_and_say_us .title {margin: auto;font-family: Ubuntu;font-style: normal;font-weight: normal;font-size: 22px;line-height: 34px;width: 846px;text-align: center;margin-top: 70px;margin-bottom: 40px;}
+
+
+.about_us .pictures_to_send_and_say_us .us {display: flex;flex-wrap: wrap;width: 1024px;}
+
+.photo_us {object-fit: cover;object-position: center;}
+
+#photo_us1 {
+    width: 304px;
+    height: 244px;
+}
+#photo_us2 {
+    width: 181px;
+    height: 244px;
+}
+#photo_us3 {
+    width: 287px;
+    height: 244px;
+}
+#photo_us4 {
+    width: 252px;
+    height: 244px;
+}
+#photo_us5 {
+    width: 332px;
+    height: 244px;
+}
+#photo_us6 {
+    width: 340px;
+    height: 244px;
+}
+#photo_us7 {
+    width: 352px;
+    height: 244px;
+}
+#photo_us8 {
+    width: 229px;
+    height: 244px;
+}
+#photo_us9 {
+    width: 347px;
+    height: 244px;
+}
+
+
+.contact_us a {
+  text-decoration: none;
+  color: white;
+}
+
+.about_us .subscribe {border-top: 1px solid #ffffff1a;border-bottom: 1px solid #ffffff1a;width: 1000px;margin: auto;margin-top: 100px;display: flex;align-items: center;justify-content: center;}
+
+.about_us .subscribe .secondary_text  {width: 516px;line-height: 26px;margin: 36px 36px;}
+
+.about_us .subscribe .social {
+  display:flex;
+}
+
+.about_us .pictures_to_send_and_say_us .and_you {width: 447px;display: flex;flex-wrap: wrap;justify-content: center;align-items: center;align-content: center;border-right: 1px #ffffff0f solid;border-bottom: 1px #ffffff0f solid;}
+
+.about_us .pictures_to_send_and_say_us .and_you .join_button {display: flex;width: 226px;height: 54px;background-color: #F8D39D;justify-content: center;align-items: center;margin-right: 20px;}
+
+.about_us .pictures_to_send_and_say_us .and_you .join_button .icon {
+  filter: invert(17%);
+  width: 31px;
+  height: 25px;
+  margin-right: 13px;
+  background-image: url("images/user-plus-solid.svg");
+  background-repeat: no-repeat;
+}
+
+.about_us .pictures_to_send_and_say_us .and_you .join_button .text {font-family: 'Ubuntu';font-weight: 700;color: #2A2C36;font-size: 17px;}
+
+
+.about_us .pictures_to_send_and_say_us .and_you .title {margin: 0;margin-bottom: 20px;}
+
+.header_mobile { display:none;}

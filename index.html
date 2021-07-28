@@ -5,6 +5,9 @@
     <title>Чайный Клуб</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_adaptive.css">
+    <link rel="stylesheet" href="mobile_adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
@@ -38,10 +41,13 @@
 
         <div class="back_rectangle"></div>
 
-        </section>
+      </section>
 
       <section class="contacts_container">
-        <div class="contact_us base_gray">contact@libtea.club</div>
+
+        <div class="contact_us base_gray">
+          <a href="mailto:someone@yoursite.com">contact@libtea.club</a>
+        </div>
         <section class="social">
 
           <a href="https://t.me/libteaclub"><div class="telegram base_gray icon"></div></a>
@@ -62,8 +68,12 @@
             <div class="title white_text">Лекции, дебаты и конференции</div>
             <div class="secondary_text">Наши идеи разделяют самые разные люди – юристы и блогеры, политики и экономисты, писатели и рок-звёзды. Мы зовем их выступать на наши мероприятия – и собираем полные залы сторонников свободы!</div>
           </section>
-          <div class="secondary_text">Граждане России достойны самостоятельно выбирать своё будущее. Каждый год мы боремся против тех, кто с этим не согласен — участники Чайного Клуба организовывают наблюдение на выборах, входят в избиркомы, участвуют в обучении коллег и консультациях кандидатов.</div>
-          <img class="photo" id="photo2" src="images/photos/2.jpg" alt="">
+          <section class="text_container" id="text_container1">
+            <div class="title white_text">Борьба за свободные выборы</div>
+            <div class="secondary_text">Граждане России достойны самостоятельно выбирать своё будущее. Каждый год мы боремся против тех, кто с этим не согласен — участники Чайного Клуба организовывают наблюдение на выборах, входят в избиркомы, участвуют в обучении коллег и консультациях кандидатов.</div>
+          </section>
+
+          <img class="photo" id="photo2" src="images/photos/2.png" alt="">
         </section>
         <section class="elections">
           <img class="photo" id="photo3" src="images/photos/3.jpeg" alt="">
@@ -82,13 +92,13 @@
             </div>
 
             <section class="articles">
-              <a class="article">
+              <a href="https://blog.libtea.club/kak_gosudarstvo_boretsya_s_narkotikami" class="article">
                 <div class="icon"></div>
                 Как государство борется с наркотиками</a>
-              <a class="article">
+              <a href="https://blog.libtea.club/lektor" class="article">
                 <div class="icon"></div>
                 Милонов, мёртвый Мякшин, похищения детей и Russia Today</a>
-              <a class="article">
+              <a href="https://blog.libtea.club/bloody_saturday" class="article">
                 <div class="icon"></div>
                 «Красная суббота» Никиты Хрущева</a>
             </section>
@@ -98,12 +108,245 @@
 
 
         <section class="rallies">
-          <div class="title white_text">Уличные протесты</div>
+          <section class="text_container">
+            <div class="title white_text">Уличные протесты</div>
+            <div class="secondary_text">Иногда, чтобы твой голос услышали, недостаточно написать статью или выпустить подкаст. Чайный Клуб участвует в массовых акциях протеста, и сам организовывал многие из них, например «Марш памяти Немцова» или Первомайское шествие в Санкт-Петербурге.</div>
+          </section>
+
+          <section class="photo_container_1">
+            <img class="photo" id="photo4" src="images/photos/4.jpg" alt="">
+            <img class="photo" id="photo5" src="images/photos/5.jpg" alt="">
+          </section>
+          <section class="photo_container_2">
+            <img class="photo" id="photo6" src="images/photos/6.jpg" alt="">
+            <img class="photo" id="photo7" src="images/photos/7.jpg" alt="">
+          </section>
+        </section>
+
+        <section class="aid">
+          <section class="container">
+            <section class="text_container">
+              <div class="title white_text">Правовая помощь</div>
+              <div class="secondary_text">В современной России любая политическая деятельность связана с риском административного или уголовного преследования. Мы, как можем, стараемся снизить эти риски — не только для участников Чайного Клуба, но и для всех остальных. </div>
+            </section>
+          </section>
+          <img class="photo" id="photo9" src="images/photos/9.png" alt="">
+
+          <section class="red_button">
+            <img class="photo" id="photo8" src="images/photos/8.jpg" alt="">
+            <section class="red_button_description">
+              <div class="secondary_text">В 2017 году Александр Литреев, участник нашего движения, запустил собственный правозащитный проект «Красная Кнопка». С помощью него тысячи незаконно задержанных граждан сообщают о произволе со стороны властей правозащитникам и получают квалифицированную помощь. </div>
+            </section>
+
+          </section>
+
+          <section class="help">
+            <div class="secondary_text">Перед массовыми протестами мы пишем и публикуем инструкции, которые помогут в сложной ситуации, а наш юрист проводил несколько онлайн-вебинаров, где бесплатно консультировал желающих. </div>
+            <div class="youtube_video">
+              <iframe width="442" height="249" src="https://www.youtube.com/embed/NzViM2ToNK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </section>
+
+        </section>
+
+        <section class="subscribe">
+          <div class="secondary_text">Мы рассказали далеко не обо всём, чем занимаемся, и у нас постоянно происходит что-то новое. Подпишитесь на наши соцсети, чтобы ничего не пропустить.</div>
+          <section class="social">
+
+            <a href="https://t.me/libteaclub"><div class="telegram base_gray icon"></div></a>
+            <a href="https://twitter.com/libteaclub"><div class="twitter base_gray icon"></div></a>
+            <a href="https://instagram.com/libteaclub"><div class="instagram base_gray icon"></div></a>
+            <a href="https://vk.com/libteaclub"><div class="vk base_gray icon"></div></a>
+            <a href="https://facebook.com/libteaclub"><div class="facebook base_gray icon"></div></a>
+            <a href="https://youtube.com/libteaclub"><div class="youtube base_gray icon"></div></a>
+
+          </section>
+        </section>
+
+        <section class="pictures_to_send_and_say_us">
+          <div class="title white_text">Мы — люди разного возраста и уровня достатка, разных вероисповеданий и увлечений. Работающие и учащиеся, мужчины и женщины, инициативные и сочувствующие... Всех нас объединяет желание жить в свободной стране с рыночной экономикой и сменяемой властью. </div>
+
+          <section class="us">
+            <img class="photo_us" id="photo_us1" src="images/photos/us/fandanta.jpg" alt="">
+            <img class="photo_us" id="photo_us2" src="images/photos/us/evzen.jpg" alt="">
+            <img class="photo_us" id="photo_us3" src="images/photos/us/utkina.jpg" alt="">
+            <img class="photo_us" id="photo_us4" src="images/photos/us/orehus.jpg" alt="">
+            <img class="photo_us" id="photo_us5" src="images/photos/us/potap.jpg" alt="">
+            <img class="photo_us" id="photo_us6" src="images/photos/us/me.jpg" alt="">
+            <img class="photo_us" id="photo_us7" src="images/photos/us/stepan.jpg" alt="">
+            <img class="photo_us" id="photo_us8" src="images/photos/us/strizhenko.jpg" alt="">
+            <img class="photo_us" id="photo_us9" src="images/photos/us/moong.jpg" alt="">
+            <section class="and_you">
+              <div class="title white_text">И вы?...</div>
+              <div class="join_button base_button">
+                <div class="icon"></div>
+                <div class="text">Присоединиться</div>
+              </div>
+
+            </section>
+          </section>
         </section>
       </section>
 
     </section>
 
+
+    <section class="header_mobile">
+
+        <section class="main_header">
+          <div class="logo"></div>
+          <div class="title white_text">Чайный Клуб</div>
+          <div class="back_rectangle"></div>
+
+        </section>
+        <section class="content">
+          <div class="description white_text">Движение за личные, экономические и политические свободы</div>
+          <section class="main_buttons">
+            <div class="join_button base_button">
+              <div class="icon"></div>
+              <div class="text white_text">Вступить</div>
+            </div>
+
+            <div class="support_button base_button">
+              <div class="icon"></div>
+              <div class="text">Поддержать</div>
+            </div>
+          </section>
+
+      </section>
+
+
+    </section>
+
+    <section class="about_us_mobile">
+      <div class="description white_text">Россия – прекрасная страна. Мы верим, что однажды сможем назвать её также свободной, богатой и счастливой. И приближаем этот миг – всеми законными способами.</div>
+      <section class="lectures">
+        <img class="photo" id="mobile1" src="images/photos/1.jpg" alt="">
+        <section class="text_container">
+          <div class="title white_text">Лекции, дебаты и конференции</div>
+          <div class="secondary_text">Наши идеи разделяют самые разные люди – юристы и блогеры, политики и экономисты, писатели и рок-звёзды. Мы зовем их выступать на наши мероприятия – и собираем полные залы сторонников свободы!</div>
+        </section>
+
+        <img class="photo" id="mobile2" src="images/photos/2.png" alt="">
+        <section class="text_container" id="text_container1">
+          <div class="title white_text">Борьба за свободные выборы</div>
+          <div class="secondary_text">Граждане России достойны самостоятельно выбирать своё будущее. Каждый год мы боремся против тех, кто с этим не согласен — участники Чайного Клуба организовывают наблюдение на выборах, входят в избиркомы, участвуют в обучении коллег и консультациях кандидатов.</div>
+        </section>
+
+      </section>
+      <section class="elections">
+        <img class="photo" id="mobile3" src="images/photos/3.jpeg" alt="">
+        <section class="text_container">
+          <div class="title white_text">Выдвижение кандидатов</div>
+          <div class="secondary_text">Избирателям близки наши идеи, и мы готовы становиться депутатами, чтобы реализовать их на практике. Не готова к такому только действующая власть — так, участницу Чайного Клуба Светлану Уткину незаконно лишили мандата  через полгода после избрания, а другие наши кандидаты сталкиваются с угрозами и фальсификациями.</div>
+        </section>
+      </section>
+      <section class="opinion">
+        <div class="title white_text">Взвешенный взгляд на актуальные проблемы</div>
+        <div class="secondary_text">Чтобы донести свою точку зрения на происходящие в стране и мире события, мы записываем подкасты с приглашёнными экспертами, пишем заметки и лонгриды, выпускаем расследования.</div>
+
+        <section class="content_container">
+          <div class="youtube_video">
+            <iframe width="442" height="249" src="https://www.youtube.com/embed/FfvHS-CmV6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <section class="articles">
+            <a href="https://blog.libtea.club/kak_gosudarstvo_boretsya_s_narkotikami" class="article">
+              <div class="icon"></div>
+              Как государство борется с наркотиками</a>
+            <a href="https://blog.libtea.club/lektor" class="article">
+              <div class="icon"></div>
+              Милонов, мёртвый Мякшин, похищения детей и Russia Today</a>
+            <a href="https://blog.libtea.club/bloody_saturday" class="article">
+              <div class="icon"></div>
+              «Красная суббота» Никиты Хрущева</a>
+          </section>
+        </section>
+
+      </section>
+
+
+      <section class="rallies">
+        <section class="text_container">
+          <div class="title white_text">Уличные протесты</div>
+          <div class="secondary_text">Иногда, чтобы твой голос услышали, недостаточно написать статью или выпустить подкаст. Чайный Клуб участвует в массовых акциях протеста, и сам организовывал многие из них, например «Марш памяти Немцова» или Первомайское шествие в Санкт-Петербурге.</div>
+        </section>
+
+        <section class="photo_container_1">
+          <img class="photo" id="mobile4" src="images/photos/4.jpg" alt="">
+          <img class="photo" id="mobile5" src="images/photos/5.jpg" alt="">
+        </section>
+        <section class="photo_container_2">
+          <img class="photo" id="mobile6" src="images/photos/6.jpg" alt="">
+          <img class="photo" id="mobile7" src="images/photos/7.jpg" alt="">
+        </section>
+      </section>
+
+      <section class="aid">
+        <section class="container">
+          <section class="text_container">
+            <div class="title white_text">Правовая помощь</div>
+            <div class="secondary_text">В современной России любая политическая деятельность связана с риском административного или уголовного преследования. Мы, как можем, стараемся снизить эти риски — не только для участников Чайного Клуба, но и для всех остальных. </div>
+          </section>
+        </section>
+        <img class="photo" id="mobile9" src="images/photos/9.png" alt="">
+
+        <section class="red_button">
+          <img class="photo" id="mobile8" src="images/photos/8.jpg" alt="">
+          <section class="red_button_description">
+            <div class="secondary_text">В 2017 году Александр Литреев, участник нашего движения, запустил собственный правозащитный проект «Красная Кнопка». С помощью него тысячи незаконно задержанных граждан сообщают о произволе со стороны властей правозащитникам и получают квалифицированную помощь. </div>
+          </section>
+
+        </section>
+
+        <section class="help">
+          <div class="youtube_video">
+            <iframe width="442" height="249" src="https://www.youtube.com/embed/NzViM2ToNK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="secondary_text">Перед массовыми протестами мы пишем и публикуем инструкции, которые помогут в сложной ситуации, а наш юрист проводил несколько онлайн-вебинаров, где бесплатно консультировал желающих. </div>
+
+        </section>
+
+      </section>
+
+      <section class="subscribe">
+        <div class="secondary_text">Мы рассказали далеко не обо всём, чем занимаемся, и у нас постоянно происходит что-то новое. Подпишитесь на наши соцсети, чтобы ничего не пропустить.</div>
+        <section class="social">
+
+          <a href="https://t.me/libteaclub"><div class="telegram base_gray icon"></div></a>
+          <a href="https://twitter.com/libteaclub"><div class="twitter base_gray icon"></div></a>
+          <a href="https://instagram.com/libteaclub"><div class="instagram base_gray icon"></div></a>
+          <a href="https://vk.com/libteaclub"><div class="vk base_gray icon"></div></a>
+          <a href="https://facebook.com/libteaclub"><div class="facebook base_gray icon"></div></a>
+          <a href="https://youtube.com/libteaclub"><div class="youtube base_gray icon"></div></a>
+
+        </section>
+      </section>
+
+      <section class="pictures_to_send_and_say_us">
+        <div class="title white_text">Мы — люди разного возраста и уровня достатка, разных вероисповеданий и увлечений. Работающие и учащиеся, мужчины и женщины, инициативные и сочувствующие... Всех нас объединяет желание жить в свободной стране с рыночной экономикой и сменяемой властью. </div>
+
+        <section class="us">
+          <img class="photo_us" id="photo_us1" src="images/photos/us/fandanta.jpg" alt="">
+          <img class="photo_us" id="photo_us2" src="images/photos/us/evzen.jpg" alt="">
+          <img class="photo_us" id="photo_us3" src="images/photos/us/utkina.jpg" alt="">
+          <img class="photo_us" id="photo_us4" src="images/photos/us/orehus.jpg" alt="">
+          <img class="photo_us" id="photo_us5" src="images/photos/us/potap.jpg" alt="">
+          <img class="photo_us" id="photo_us6" src="images/photos/us/me.jpg" alt="">
+          <img class="photo_us" id="photo_us7" src="images/photos/us/stepan.jpg" alt="">
+          <img class="photo_us" id="photo_us8" src="images/photos/us/strizhenko.jpg" alt="">
+          <img class="photo_us" id="photo_us9" src="images/photos/us/moong.jpg" alt="">
+          <section class="and_you">
+            <div class="title white_text">И вы?...</div>
+            <div class="join_button base_button">
+              <div class="icon"></div>
+              <div class="text">Присоединиться</div>
+            </div>
+
+          </section>
+        </section>
+      </section>
+    </section>
 
   </body>
 </html>
