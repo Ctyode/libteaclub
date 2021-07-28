@@ -5,6 +5,9 @@ body {
     background-color: #33333D;
 }
 
+.header_mobile { display: none;}
+.about_us_mobile { display: none;}
+
 .base_ui {
   background-color: #2a2c36;
 }
