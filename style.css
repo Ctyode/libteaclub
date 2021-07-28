@@ -411,3 +411,83 @@ body {
 .about_us .pictures_to_send_and_say_us .and_you .title {margin: 0;margin-bottom: 20px;}
 
 .header_mobile { display:none;}
+
+.donate {}
+
+.donate .text_container {}
+
+.donate .crypto {
+    display: flex;
+}
+
+.donate .bitcoin_container {
+    background-color: white;
+    border-radius: 5px;
+    width: 164px;
+    height: 222px;
+}
+
+.donate .ethereum_container {
+    background-color: white;
+    border-radius: 5px;
+    width: 164px;
+    height: 222px;
+}
+
+.donate .ethereum_container .icon  {}
+
+.donate .ethereum_container .title  {}
+
+.donate .ethereum_container .qr_code  {}
+
+.donate .cards {}
+
+.donate .sberbank {
+    background-color: white;
+    border-radius: 5px;
+    width: 392px;
+    display: flex;
+    height: 102px;
+}
+
+.donate .sberbank .icon, .donate .tinkoff .icon {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+}
+
+.donate .sberbank .icon {
+
+}
+
+ .donate .tinkoff .icon {
+
+ }
+
+.donate .sberbank .title, .donate .tinkoff .title {
+    font-family: Ubuntu Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    color: #33333D;
+}
+
+.donate .sberbank .number, .donate .tinkoff .number  {
+    font-family: Ubuntu Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    color: #33333D;
+}
+
+.donate .tinkoff {
+    background-color: white;
+    border-radius: 5px;
+    width: 392px;
+    height: 102px;
+    display: flex;
+}
