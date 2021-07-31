@@ -148,22 +148,22 @@ body {
   font-weight: normal;
   font-size: 22px;
   line-height: 34px;
-  width: 650px;
+  width: 660px;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 40px;
 }
 
 
-.about_us .lectures {width: 1050px;display: flex;left: 0;right: 0;margin: auto;flex-wrap: wrap;}
+.about_us .lectures {width: 974px;display: flex;left: 0;right: 0;margin: auto;flex-wrap: wrap;}
 
 .photo {object-fit: cover;border-radius: 5px;}
 
-#photo1 {width: 566px;height: 271px;box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);margin-left: -25px;}
+#photo1 {width: 500px;height: 271px;box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);}
 
-#photo2 {margin-top: -40px;width: 548px;height: 283px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
+#photo2 {margin-top: -40px;width: 500px;height: 283px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
 
-#photo3 {width: 498px;height: 332px;margin-left: -20px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
+#photo3 {width: 450px;height: 227px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
 
 #photo4 {width: 272px;height: 214px;margin-right: 15px;box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
 
@@ -180,14 +180,14 @@ body {
 
 
 .about_us .lectures .text_container {
-    margin-left: 45px;
-    margin-top: 13px;
+    margin-left: 47px;
+    margin-top: 30px;
 }
 
 #text_container1 {
-    margin-left: 24px;
-    margin-top: 39px;
-    margin-right: 55px;
+    margin-left: 22px;
+    margin-top: 42px;
+    margin-right: 39px;
 }
 
 .about_us .lectures .text_container .title {margin-bottom: 14px;font-family: Ubuntu;font-style: normal;font-weight: normal;font-size: 22px;line-height: 34px;text-align: -webkit-match-parent;}
@@ -215,7 +215,7 @@ body {
   font-size: 16px;
 }
 
-.about_us .elections {display: flex;left: 0;right: 0;margin: auto;width: 1050px;margin-top: 70px;}
+.about_us .elections {display: flex;left: 0;right: 0;margin: auto;width: 974px;margin-top: 70px;}
 
 .about_us .elections .text_container  {
   margin-top: 50px;
@@ -230,10 +230,11 @@ body {
 .about_us .elections .secondary_text {
   line-height: 26px;
   margin: 0;
+  margin-left: 0px;
   width: 461px;
 }
 
-.about_us .opinion {left: 0;right: 0;margin: auto;width: 1050px;margin-top: 70px;}
+.about_us .opinion {left: 0;right: 0;margin: auto;width: 995px;margin-top: 70px;}
 
 .about_us .opinion .title {
   margin-bottom: 14px;
@@ -248,7 +249,7 @@ body {
 
 .about_us .opinion .secondary_text {
   line-height: 26px;
-  width: 766px;
+  width: 521px;
   text-align: center;
   margin: auto;
 }
@@ -302,9 +303,9 @@ body {
 
 .about_us .rallies .photo_container_2 {display: flex;margin-top: 15px;}
 
-.about_us .rallies {display: flex;flex-wrap: wrap;width: 1050px;margin-top: 40px;justify-content: center;}
+.about_us .rallies {display: flex;flex-wrap: wrap;width: 995px;margin-top: 40px;justify-content: center;}
 
-.about_us .aid {display: flex;flex-wrap: wrap;width: 972px;margin: auto;margin-top: 68px;}
+.about_us .aid {display: flex;flex-wrap: wrap;width: 948px;margin: auto;margin-top: 68px;}
 
 .about_us .aid .container {
   display: flex;
@@ -419,14 +420,13 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
-  width: 1031px;
+  width: 961px;
   margin: 64px auto 64px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 32px;
   row-gap: 26px;
   padding: 53px 0 0 0;
-  border: solid #ffffff10;
   border-width: 1px 0 0 0;
 }
 
@@ -438,6 +438,7 @@ body {
   line-height: 25px;
   align-items: center;
   color: #FFFFFF;
+  margin-bottom: 17px;
 }
 
 .donate .cards {
@@ -447,6 +448,7 @@ body {
   font-style: normal;
   font-weight: normal;
   color: #33333D;
+  margin-top: 10px;
 }
 
 .cards .sberbank,
@@ -454,8 +456,8 @@ body {
   display: grid;
   grid-template-areas:
     'a b'
-    'a c'
-  ;
+    'a c';
+  row-gap: 12px;
   grid-template-columns: 102px 1fr;
   column-gap: 26px;
   background-color: white;
@@ -466,27 +468,36 @@ body {
 
 .cards .icon {
   grid-area: a;
-  background-color: aqua;
   border-radius: 5px 0 0 5px;
   width: 102px;
   height: 102px;
+  background-size: contain;
 }
 
 .cards .title {
   grid-area: b;
+/* Ð¢Ð¸Ð½ÑŒÐºÐ¾Ñ„Ñ„ */
+  font-family: Ubuntu Condensed;
+  font-size: 20px;
+  align-self: end;
+  line-height: 23px;
+  color: #33333D;
 }
 
 .cards .number {
+  /* 5536 9137 9452 9624 */
+  font-family: Ubuntu Condensed;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  color: #33333D;
   grid-area: c;
+  align-self: start;
 }
 
-.donate .sberbank .icon {
+.donate .sberbank .icon {background-image: url("images/sber.png");}
 
-}
-
-.donate .tinkoff .icon {
-
-}
+.donate .tinkoff .icon {background-image: url("images/tinkoff.png");}
 
 .donate .crypto {
   display: grid;
@@ -516,22 +527,35 @@ body {
 
 .donate .crypto_container .icon {
   grid-area: a;
-
+  background-size: contain;
 }
+
+.donate .crypto_container .bitcoin_container .icon {
+}
+
+.donate .crypto_container .ethereum_container .icon {
+}
+
 
 .donate .crypto_container .title {
   grid-area: b;
   color: #33333D;
+  font-family: 'Ubuntu Condensed';
+  font-size: 20px;
+  align-self: center;
 }
 
 .donate .crypto_container .qr_code {
   grid-area: c;
+  width: 128px;
+  height: 128px;
 }
 
 .donate .crypto_text {
   font-family: 'Ubuntu Condensed';
   font-size: 25px;
   row-gap: 24px;
+  margin-top: 33px;
 }
 
 .donate .crypto_text_a {
@@ -546,3 +570,7 @@ body {
 .donate .crypto_text_a .number {
   font-size: 20px;
 }
+
+.donate .bitcoin_container .icon {background-image: url("images/icons8-bitcoin.svg");width: 38px;height: 38px;}
+
+.donate .ethereum_container .icon {background-image: url("images/icons8-ethereum.svg");}
