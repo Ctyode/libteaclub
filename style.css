@@ -393,7 +393,7 @@ body {
   display:flex;
 }
 
-.about_us .pictures_to_send_and_say_us .and_you {width: 447px;display: flex;flex-wrap: wrap;justify-content: center;align-items: center;align-content: center;border-right: 1px #ffffff0f solid;border-bottom: 1px #ffffff0f solid;}
+.about_us .pictures_to_send_and_say_us .and_you {z-index: 100;width: 447px;display: flex;flex-wrap: wrap;justify-content: center;align-items: center;align-content: center;border-right: 1px #ffffff0f solid;border-bottom: 1px #ffffff0f solid;}
 
 .about_us .pictures_to_send_and_say_us .and_you .join_button {display: flex;width: 226px;height: 54px;background-color: #F8D39D;justify-content: center;align-items: center;margin-right: 20px;}
 
@@ -413,7 +413,7 @@ body {
 
 .header_mobile { display:none;}
 
-.donate {
+.about_us .donate {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: 500;
@@ -430,9 +430,11 @@ body {
   border-width: 1px 0 0 0;
 }
 
-.donate .text_container {}
+.about_us .donate .text_container {
+    width: 400px;
+}
 
-.donate .text_container .title {
+.about_us .donate .text_container .title {
   font-weight: bold;
   font-size: 22px;
   line-height: 25px;
@@ -441,136 +443,145 @@ body {
   margin-bottom: 17px;
 }
 
-.donate .cards {
-  display: grid;
-  row-gap: 16px;
-  font-family: Ubuntu Condensed;
-  font-style: normal;
-  font-weight: normal;
-  color: #33333D;
-  margin-top: 10px;
-}
 
-.cards .sberbank,
-.cards .tinkoff {
-  display: grid;
-  grid-template-areas:
-    'a b'
-    'a c';
-  row-gap: 12px;
-  grid-template-columns: 102px 1fr;
-  column-gap: 26px;
-  background-color: white;
-  border-radius: 5px;
-  width: 392px;
-  align-items: center;
-}
-
-.cards .icon {
-  grid-area: a;
-  border-radius: 5px 0 0 5px;
-  width: 102px;
-  height: 102px;
-  background-size: contain;
-}
-
-.cards .title {
-  grid-area: b;
-/* Ð¢Ð¸Ð½ÑŒÐºÐ¾Ñ„Ñ„ */
-  font-family: Ubuntu Condensed;
-  font-size: 20px;
-  align-self: end;
-  line-height: 23px;
-  color: #33333D;
-}
-
-.cards .number {
-  /* 5536 9137 9452 9624 */
-  font-family: Ubuntu Condensed;
-  font-size: 20px;
-  line-height: 23px;
+.about_us .donate {
   display: flex;
-  color: #33333D;
-  grid-area: c;
-  align-self: start;
 }
 
-.donate .sberbank .icon {background-image: url("images/sber.png");}
+.about_us .donate .requisites {width: 500px;}
 
-.donate .tinkoff .icon {background-image: url("images/tinkoff.png");}
-
-.donate .crypto {
-  display: grid;
-  grid-template-columns: 164px 164px;
-  column-gap: 32px;
-}
-
-.donate .crypto_container {
-  box-sizing: border-box;
-  background-color: white;
-  padding: 18px;
+.about_us .donate .requisites .menu {
+  display: flex;
+  height: 43px;
+  background-color: #2A2C36;
   border-radius: 5px;
-  width: 164px;
-  height: 222px;
-
-  display: grid;
-  grid-template-areas:
-    'a b'
-    'c c'
-  ;
-
-  grid-template-columns: 38px 1fr;
-  grid-template-rows: 38px 1fr;
-  row-gap: 16px;
-  column-gap: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%), 0 3px 5px -1px rgb(0 0 0 / 20%);
 }
 
-.donate .crypto_container .icon {
-  grid-area: a;
+.about_us .donate .requisites .qr_code {
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: -54px;
+}
+
+.about_us .donate .requisites .menu .item {
+    width: 140px;
+    text-align: center;
+    border-left: 1px solid #3E3E4B;
+    height: inherit;
+    line-height: 43px;
+    cursor: pointer;
+}
+
+.about_us .donate .requisites .menu .item:first-of-type {
+  border: none;
+
+}
+
+.about_us .donate .requisites .menu .active_item {
+    width: 140px;
+    text-align: center;
+    border: none;
+    background-color: #5F607B;
+    font-weight: 700;
+}
+
+.about_us .donate .requisites .sber_container  {
+
+}
+
+.about_us .donate .requisites .sber_container .logo {
+  background-image: url("images/sber_logo.svg");
+  width: 210px;
+  height: 33px;
+  margin-bottom: 20px;
+}
+
+.about_us .donate .requisites .tinkoff_container .logo {
+  background-image: url("images/tinkoff_logo.svg");
+  width: 126px;
+  height: 33px;
+  margin-bottom: 20px;
   background-size: contain;
 }
 
-.donate .crypto_container .bitcoin_container .icon {
-}
-
-.donate .crypto_container .ethereum_container .icon {
-}
-
-
-.donate .crypto_container .title {
-  grid-area: b;
-  color: #33333D;
-  font-family: 'Ubuntu Condensed';
-  font-size: 20px;
-  align-self: center;
-}
-
-.donate .crypto_container .qr_code {
-  grid-area: c;
+.about_us .donate .requisites .bitcoin_container .logo {
+  background-image: url("images/bitcoin_logo.svg");
   width: 128px;
-  height: 128px;
+  background-size: contain;
+  height: 27px;
+  margin-bottom: 22px;
+  margin-top: 4px;
 }
 
-.donate .crypto_text {
-  font-family: 'Ubuntu Condensed';
-  font-size: 25px;
-  row-gap: 24px;
-  margin-top: 33px;
+.about_us .donate .requisites .ethereum_container .logo {
+  background-image: url("images/Ethereum-Logo.svg");
+  width: 152px;
+  height: 38px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.donate .crypto_text_a {
-  margin-bottom: 24px;
+.about_us .donate .money_container {
+  display:none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 24px;
+  margin-top: 24px;
 }
 
-.donate .crypto_text_a .title {
-  margin-bottom: 16px;
-  font-size: 25px;
+
+
+.about_us .donate .active_container {
+  display: block;
 }
 
-.donate .crypto_text_a .number {
-  font-size: 20px;
+.about_us .donate .active_container .numbers {
+  display: block;
+  width: 430px;
+  font-family: 'Ubuntu';
+  padding: 11px 10px;
+  font-size: 16px;
+  border: #D7D7D7 1px solid;
+  border-radius: 5px;
 }
 
-.donate .bitcoin_container .icon {background-image: url("images/icons8-bitcoin.svg");width: 38px;height: 38px;}
+textarea:focus, input:focus, input[type="text"]:focus, .numbers:focus {
+  border:0.5em solid #00c; /* here configure as your needs */
+  color:#00c;
 
-.donate .ethereum_container .icon {background-image: url("images/icons8-ethereum.svg");}
+}
+
+.about_us .donate .money_container  .button_copy {display: block;position: absolute;right: 0;width: 22px;background: none;height: 22px;background-image: url("images/icons8-скопировать.svg");margin-right: 8px;background-size: cover;padding: 0;border: none;filter: invert(34%);}
+
+.about_us .donate .money_container  .form_number {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.about_us .donate .money_container  .small_form  {width: 305px;font-size: 12px;}
+
+.about_us .donate .money_container .container {
+  display: flex;
+  position: relative;
+}
+
+.about_us .donate .money_container  .go_to {
+  display: block;
+  background: none;
+  margin-right: 7px;
+  background-size: cover;
+  padding: 14px;
+  color: white;
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  border: none;
+  margin-top: 14px;
+  border-radius: 5px;
+  background: #5e607b;
+  cursor: pointer;
+  box-shadow: 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%), 0 3px 5px -1px rgb(0 0 0 / 20%);
+}

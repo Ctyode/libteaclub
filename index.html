@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
   </head>
   <body>
 
@@ -187,55 +190,64 @@
         </section>
 
         <section class="donate">
-
           <section class="text_container">
             <div class="title white_text">Поддержать Чайный Клуб</div>
-            <div class="secondary_text">Мы — некоммерческая организация. У нас нет другого источника доходов, кроме добровольных пожертвований людей, которым нравится то, что мы делаем.</div>
-            <br>
-            <div class="secondary_text">Поддержите нас, и мы сможем дальше проводить просветительские мероприятия, защищать свободные выборы и приближать богатую и счастливую Россию.</div>
+            <div class="secondary_text">
+              Мы — некоммерческая организация. У нас нет другого источника доходов, кроме добровольных пожертвований людей, которым нравится то, что мы делаем. <br> <br> Поддержите нас, и мы сможем дальше проводить просветительские мероприятия, защищать свободные выборы и приближать богатую счастливую Россию.
+            </div>
           </section>
-
-          <section class="crypto">
-            <section class="crypto_container bitcoin_container">
-                <div class="icon"></div>
-                <div class="title">Биткоин</div>
-              <img src="images/биткоин.png" class="qr_code">
+          <section class="requisites">
+            <section class="menu">
+              <div class="sberbank active_item item" kto="money1">Сбербанк</div>
+              <div class="tinkoff item" kto="money2">Тинькофф</div>
+              <div class="bitcoin item" kto="money3">Bitcoin</div>
+              <div class="ethereum item" kto="money4">Ethereum</div>
             </section>
-            <section class="crypto_container ethereum_container">
-                <div class="icon"></div>
-                <div class="title">Эфириум</div>
+            <section class="banks">
+              <section class="money_container sber_container active_container" id="money1">
+                <div class="logo"></div>
+                <div class="form_number">
+                  <button class="button_copy" type="button" name="button_copy"></button>
+                  <input class="numbers" type="text" value="4276 5500 5408 1750">
+                </div>
+                <button class="go_to" type="button" name="button">Перейти на Сбербанк.Онлайн</button>
 
-              <img src="images/эфир.png" class="qr_code">
+              </section>
+              <section class="money_container tinkoff_container" id="money2">
+                <div class="logo"></div>
+                <div class="form_number">
+                  <button class="button_copy" type="button" name="button_copy"></button>
+                  <input class="numbers" type="text" value="5536 9137 9452 9624">
+                </div>
+                <button class="go_to" type="button" name="button">Перейти на Тинькофф</button>
 
+              </section>
+              <section class="money_container bitcoin_container" id="money3">
+                <div class="logo"></div>
+
+                <div class="container">
+                  <div class="form_number">
+                    <button class="button_copy" type="button" name="button_copy"></button>
+                    <input class="small_form numbers" type="text" value="1MBkcH7cSkNuxdtrXrNFygiEtemCMpV8V4">
+                  </div>
+                  <img src="images/биткоин.png" class="qr_code">
+                </div>
+
+              </section>
+              <section class="money_container ethereum_container" id="money4">
+                <div class="logo"></div>
+                <div class="container">
+
+                  <div class="form_number">
+                    <button class="button_copy" type="button" name="button_copy"></button>
+                    <input class="small_form numbers" type="text" value="0xf44fbe11d3f05d2c351ae4a96762a3a78ea4121b">
+                  </div>
+                  <img src="images/эфир.png" class="qr_code">
+                </div>
+
+              </section>
             </section>
           </section>
-
-          <section class="cards">
-            <section class="sberbank">
-              <div class="icon"></div>
-              <div class="title">Сбербанк</div>
-              <div class="number">4276 5500 5408 1750</div>
-            </section>
-
-            <section class="tinkoff">
-              <div class="icon"></div>
-              <div class="title">Тинькофф</div>
-              <div class="number">4276 5500 5408 1750</div>
-            </section>
-          </section>
-
-          <section class="crypto_text">
-            <section class="crypto_text_a bitcoin">
-              <div class="title">Биткоин</div>
-              <div class="number">1MBkcH7cSkNuxdtrXrNFygiEtemCMpV8V4</div>
-            </section>
-
-            <section class="crypto_text_a ethereum">
-              <div class="title">Эфириум</div>
-              <div class="number">0xf44fbe11d3f05d2c351ae4a96762a3a78ea4121b</div>
-            </section>
-          </section>
-
         </section>
       </section>
 
@@ -389,6 +401,7 @@
           <img class="photo_us" id="photo_us7_mobile" src="images/photos/us/stepan.jpg" alt="">
           <img class="photo_us" id="photo_us8_mobile" src="images/photos/us/strizhenko.jpg" alt="">
           <img class="photo_us" id="photo_us9_mobile" src="images/photos/us/moong.jpg" alt="">
+
           <section class="and_you">
             <div class="title white_text">И вы?...</div>
             <div class="join_button base_button">
@@ -410,6 +423,14 @@
             video.style.height = `${video.clientWidth * 9/16}px`;
           });
       });
+
+      $(".item").click(function() {
+        $(".item").removeClass("active_item");
+        $(this).addClass("active_item");
+        $(".money_container").removeClass("active_container")
+        $( ("#"+$(this).attr("kto")) ).addClass("active_container");
+      });
+
     </script>
 
   </body>
