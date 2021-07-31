@@ -207,8 +207,9 @@
               <section class="money_container sber_container active_container" id="money1">
                 <div class="logo"></div>
                 <div class="form_number">
-                  <button class="button_copy" type="button" name="button_copy"></button>
-                  <input class="numbers" type="text" value="4276 5500 5408 1750">
+                  <div class="icon_background"></div>
+                  <button onclick="copy_sber()" class="button_copy" type="button" name="button_copy"></button>
+                  <input onclick="copy_sber()" id="sber-input" class="numbers" type="text" value="4276 5500 5408 1750">
                 </div>
                 <button class="go_to" type="button" name="button">Перейти на Сбербанк.Онлайн</button>
 
@@ -216,8 +217,9 @@
               <section class="money_container tinkoff_container" id="money2">
                 <div class="logo"></div>
                 <div class="form_number">
-                  <button class="button_copy" type="button" name="button_copy"></button>
-                  <input class="numbers" type="text" value="5536 9137 9452 9624">
+                  <div class="icon_background"></div>
+                  <button onclick="copy_tinkoff()" class="button_copy" type="button" name="button_copy"></button>
+                  <input onclick="copy_tinkoff()" id="tinkoff-input" class="numbers" type="text" value="5536 9137 9452 9624">
                 </div>
                 <button class="go_to" type="button" name="button">Перейти на Тинькофф</button>
 
@@ -227,8 +229,10 @@
 
                 <div class="container">
                   <div class="form_number">
-                    <button class="button_copy" type="button" name="button_copy"></button>
-                    <input class="small_form numbers" type="text" value="1MBkcH7cSkNuxdtrXrNFygiEtemCMpV8V4">
+                    <div class="icon_background"></div>
+
+                    <button onclick="copy_btc()" class="button_copy" type="button" name="button_copy"></button>
+                    <input onclick="copy_btc()" id="btc-input" class="small_form numbers" type="text" value="1MBkcH7cSkNuxdtrXrNFygiEtemCMpV8V4">
                   </div>
                   <img src="images/биткоин.png" class="qr_code">
                 </div>
@@ -239,8 +243,10 @@
                 <div class="container">
 
                   <div class="form_number">
-                    <button class="button_copy" type="button" name="button_copy"></button>
-                    <input class="small_form numbers" type="text" value="0xf44fbe11d3f05d2c351ae4a96762a3a78ea4121b">
+                    <div class="icon_background"></div>
+
+                    <button onclick="copy_eth()" class="button_copy" type="button" name="button_copy"></button>
+                    <input onclick="copy_eth()" id="eth-input" class="small_form numbers" type="text" value="0xf44fbe11d3f05d2c351ae4a96762a3a78ea4121b">
                   </div>
                   <img src="images/эфир.png" class="qr_code">
                 </div>
@@ -430,6 +436,23 @@
         $(".money_container").removeClass("active_container")
         $( ("#"+$(this).attr("kto")) ).addClass("active_container");
       });
+
+      function copy_sber() {
+        $('#sber-input').select();
+        document.execCommand('copy');
+      }
+      function copy_tinkoff() {
+        $('#tinkoff-input').select();
+        document.execCommand('copy');
+      }
+      function copy_btc() {
+        $('#btc-input').select();
+        document.execCommand('copy');
+      }
+      function copy_eth() {
+        $('#eth-input').select();
+        document.execCommand('copy');
+      }
 
     </script>
 

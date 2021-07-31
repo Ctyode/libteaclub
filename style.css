@@ -517,7 +517,7 @@ body {
 }
 
 .about_us .donate .requisites .ethereum_container .logo {
-  background-image: url("images/Ethereum-Logo.svg");
+  background-image: url("images/ethereum_logo.png");
   width: 152px;
   height: 38px;
   margin-bottom: 15px;
@@ -547,22 +547,28 @@ body {
   font-size: 16px;
   border: #D7D7D7 1px solid;
   border-radius: 5px;
+  color: #404040;
 }
 
 textarea:focus, input:focus, input[type="text"]:focus, .numbers:focus {
-  border:0.5em solid #00c; /* here configure as your needs */
-  color:#00c;
-
+   color: #404040;
 }
 
-.about_us .donate .money_container  .button_copy {display: block;position: absolute;right: 0;width: 22px;background: none;height: 22px;background-image: url("images/icons8-скопировать.svg");margin-right: 8px;background-size: cover;padding: 0;border: none;filter: invert(34%);}
+textarea:focus-visible, input:focus-visible, input[type="text"]:focus-visible, .numbers:focus-visible {
+   outline-width: 1px;
+   outline-color: #5d607b;
+}
+
+.about_us .donate .money_container .icon_background {display: block;position: absolute;width: 50px;margin-right: 3px;right: 0;height: 29px;/* margin-right: 10px; *//* background: linear-gradient(to left, #333 50%, #eee 75%, #333 75%); */background: linear-gradient(to right, transparent, white 40%);}
+
+.about_us .donate .money_container  .button_copy {display: block;position: absolute;right: 0;width: 22px;background: none;height: 22px;cursor: pointer;background-image: url("images/icons8-скопировать.svg");margin-right: 8px;background-size: cover;padding: 0;border: none;filter: invert(34%);}
 
 .about_us .donate .money_container  .form_number {
   display: flex;
   align-items: center;
   position: relative;
 }
-.about_us .donate .money_container  .small_form  {width: 305px;font-size: 12px;}
+.about_us .donate .money_container  .small_form  {width: 305px;font-size: 14px;}
 
 .about_us .donate .money_container .container {
   display: flex;
