@@ -5,6 +5,12 @@ body {
     background-color: #33333D;
 }
 
+a {
+  text-decoration: none;
+  color: wheat;
+}
+
+
 .header_mobile { display: none;}
 .about_us_mobile { display: none;}
 
@@ -108,12 +114,18 @@ body {
 
 .contacts_container .contact_us {width: 70%;max-width: 980px;}
 
-.contacts_container .social {
+.contacts_container .social, .footer .social {
     display: flex;
 }
 
-.social .icon {margin: 8px;filter: invert(78%) brightness(100%) contrast(100%);width: 28px;height: 28px;background-repeat: no-repeat;background-position: center;}
+.footer .social {
+   margin-left: -10px;
+    margin-bottom: 14px;
+}
 
+.social .icon {transition: 0.2s;margin: 8px;filter: invert(78%) brightness(100%) contrast(100%);width: 28px;height: 28px;background-repeat: no-repeat;background-position: center;}
+
+.social .icon:hover {filter: invert(100%) brightness(100%) contrast(100%);}
 
 .social .telegram {
   background-image: url("images/telegram-plane-brands.svg")
@@ -413,7 +425,7 @@ body {
 
 .header_mobile { display:none;}
 
-.about_us .donate {
+.donate {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: 500;
@@ -428,13 +440,14 @@ body {
   row-gap: 26px;
   padding: 53px 0 0 0;
   border-width: 1px 0 0 0;
+  margin-bottom: 100px;
 }
 
-.about_us .donate .text_container {
+.donate .text_container {
     width: 400px;
 }
 
-.about_us .donate .text_container .title {
+.donate .text_container .title {
   font-weight: bold;
   font-size: 22px;
   line-height: 25px;
@@ -444,13 +457,13 @@ body {
 }
 
 
-.about_us .donate {
+.donate {
   display: flex;
 }
 
-.about_us .donate .requisites {width: 500px;}
+.donate .requisites {width: 500px;}
 
-.about_us .donate .requisites .menu {
+.donate .requisites .menu {
   display: flex;
   height: 43px;
   background-color: #2A2C36;
@@ -459,14 +472,14 @@ body {
   box-shadow: 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%), 0 3px 5px -1px rgb(0 0 0 / 20%);
 }
 
-.about_us .donate .requisites .qr_code {
+.donate .requisites .qr_code {
     width: 100px;
     position: absolute;
     right: 0;
     top: -54px;
 }
 
-.about_us .donate .requisites .menu .item {
+.donate .requisites .menu .item {
     width: 140px;
     text-align: center;
     border-left: 1px solid #3E3E4B;
@@ -475,12 +488,12 @@ body {
     cursor: pointer;
 }
 
-.about_us .donate .requisites .menu .item:first-of-type {
+.donate .requisites .menu .item:first-of-type {
   border: none;
 
 }
 
-.about_us .donate .requisites .menu .active_item {
+.donate .requisites .menu .active_item {
     width: 140px;
     text-align: center;
     border: none;
@@ -488,18 +501,18 @@ body {
     font-weight: 700;
 }
 
-.about_us .donate .requisites .sber_container  {
+.donate .requisites .sber_container  {
 
 }
 
-.about_us .donate .requisites .sber_container .logo {
+.donate .requisites .sber_container .logo {
   background-image: url("images/sber_logo.svg");
   width: 210px;
   height: 33px;
   margin-bottom: 20px;
 }
 
-.about_us .donate .requisites .tinkoff_container .logo {
+.donate .requisites .tinkoff_container .logo {
   background-image: url("images/tinkoff_logo.svg");
   width: 126px;
   height: 33px;
@@ -507,7 +520,7 @@ body {
   background-size: contain;
 }
 
-.about_us .donate .requisites .bitcoin_container .logo {
+.donate .requisites .bitcoin_container .logo {
   background-image: url("images/bitcoin_logo.svg");
   width: 128px;
   background-size: contain;
@@ -516,7 +529,7 @@ body {
   margin-top: 4px;
 }
 
-.about_us .donate .requisites .ethereum_container .logo {
+.donate .requisites .ethereum_container .logo {
   background-image: url("images/ethereum_logo.png");
   width: 152px;
   height: 38px;
@@ -525,7 +538,7 @@ body {
   background-size: cover;
 }
 
-.about_us .donate .money_container {
+.donate .money_container {
   display:none;
   background-color: white;
   border-radius: 5px;
@@ -535,11 +548,11 @@ body {
 
 
 
-.about_us .donate .active_container {
+.donate .active_container {
   display: block;
 }
 
-.about_us .donate .active_container .numbers {
+.donate .active_container .numbers {
   display: block;
   width: 430px;
   font-family: 'Ubuntu';
@@ -559,23 +572,23 @@ textarea:focus-visible, input:focus-visible, input[type="text"]:focus-visible, .
    outline-color: #5d607b;
 }
 
-.about_us .donate .money_container .icon_background {display: block;position: absolute;width: 50px;margin-right: 3px;right: 0;height: 29px;/* margin-right: 10px; *//* background: linear-gradient(to left, #333 50%, #eee 75%, #333 75%); */background: linear-gradient(to right, transparent, white 40%);}
+.donate .money_container .icon_background {display: block;position: absolute;width: 50px;margin-right: 3px;right: 0;height: 29px;/* margin-right: 10px; *//* background: linear-gradient(to left, #333 50%, #eee 75%, #333 75%); */background: linear-gradient(to right, transparent, white 40%);}
 
-.about_us .donate .money_container  .button_copy {display: block;position: absolute;right: 0;width: 22px;background: none;height: 22px;cursor: pointer;background-image: url("images/icons8-скопировать.svg");margin-right: 8px;background-size: cover;padding: 0;border: none;filter: invert(34%);}
+.donate .money_container  .button_copy {display: block;position: absolute;right: 0;width: 22px;background: none;height: 22px;cursor: pointer;background-image: url("images/icons8-скопировать.svg");margin-right: 8px;background-size: cover;padding: 0;border: none;filter: invert(34%);}
 
-.about_us .donate .money_container  .form_number {
+.donate .money_container  .form_number {
   display: flex;
   align-items: center;
   position: relative;
 }
-.about_us .donate .money_container  .small_form  {width: 305px;font-size: 14px;}
+.donate .money_container  .small_form  {width: 305px;font-size: 14px;}
 
-.about_us .donate .money_container .container {
+.donate .money_container .container {
   display: flex;
   position: relative;
 }
 
-.about_us .donate .money_container  .go_to {
+.donate .money_container  .go_to {
   display: block;
   background: none;
   margin-right: 7px;
@@ -591,3 +604,26 @@ textarea:focus-visible, input:focus-visible, input[type="text"]:focus-visible, .
   cursor: pointer;
   box-shadow: 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%), 0 3px 5px -1px rgb(0 0 0 / 20%);
 }
+
+.regulations {font-family: Ubuntu;font-style: normal;font-weight: bold;font-size: 16px;line-height: 32px;
+text-align: right;color: #F8D39D;}
+
+.footer {
+    border-top: 1px solid #3f3f48;
+}
+
+.footer .footer_container {
+    width: 900px;
+    position: relative;
+    display: flex;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.documents {
+    right: 0;
+    position: absolute;
+    margin-top: -5px;
+}
+.documents .my_link {display: flex;justify-content: flex-end;color: white;font-family: Ubuntu;font-style: normal;font-weight: bold;font-size: 16px;line-height: 32px;text-align: right;}
