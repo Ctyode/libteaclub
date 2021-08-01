@@ -345,12 +345,27 @@ a {
 
 .about_us .aid .help .secondary_text {margin-top: 144px;line-height: 26px;width: 429px;margin-right: 67px;}
 
-.about_us .pictures_to_send_and_say_us {width: 1031px;margin: auto;}
+.about_us .pictures_to_send_and_say_us_container {
+    position: relative;
+}
+
+.about_us .pictures_to_send_and_say_us_pics_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.about_us .pictures_to_send_and_say_us_pics_fg {
+    position: relative; /* )=>-- */
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .about_us .pictures_to_send_and_say_us .title {margin: auto;font-family: Ubuntu;font-style: normal;font-weight: normal;font-size: 22px;line-height: 34px;width: 846px;text-align: center;margin-top: 70px;margin-bottom: 40px;}
-
-
-.about_us .pictures_to_send_and_say_us .us {display: flex;flex-wrap: wrap;width: 1024px;}
 
 .photo_us {object-fit: cover;object-position: center;}
 
@@ -405,7 +420,17 @@ a {
   display:flex;
 }
 
-.about_us .pictures_to_send_and_say_us .and_you {z-index: 100;width: 447px;display: flex;flex-wrap: wrap;justify-content: center;align-items: center;align-content: center;border-right: 1px #ffffff0f solid;border-bottom: 1px #ffffff0f solid;}
+.about_us .pictures_to_send_and_say_us .and_you {
+    background: #33333D;
+    width: 447px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-right: 1px #ffffff0f solid;
+    border-bottom: 1px #ffffff0f solid;
+}
 
 .about_us .pictures_to_send_and_say_us .and_you .join_button {display: flex;width: 226px;height: 54px;background-color: #F8D39D;justify-content: center;align-items: center;margin-right: 20px;}
 
