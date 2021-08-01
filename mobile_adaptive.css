@@ -616,7 +616,6 @@
     position: relative;
     width: 100%;
   }
-  .donate .money_container  .small_form  {width: 305px;font-size: 14px;}
 
   .donate .money_container .container {
     display: flex;
@@ -669,8 +668,6 @@
     display: none;
   }
 
-  .donate .requisites .banks .money_container .form_number {
-    width: unset;
-  }
+  
 
 }
