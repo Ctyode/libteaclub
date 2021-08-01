@@ -116,7 +116,7 @@ color: rgba(255, 255, 255, 0.69);}
 
   .about_us_mobile .opinion .content_container .articles .article {background-color: white;padding: 17px 20px;margin-bottom: 13px;font-size: 15px;border-radius: 5px;display: flex;text-decoration: none;align-items: center;color: inherit;font-family: 'Ubuntu';box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);}
 
-  .about_us_mobile .opinion .content_container .articles .article .icon {background-image: url("images/file_icon.svg");display:inline-block;width: 26px;height: 34px;background-repeat: no-repeat;background-position: center;margin-right: 18px;}
+  .about_us_mobile .opinion .content_container .articles .article .icon {background-image: url("/static/placeholder/images/file_icon.svg");display:inline-block;width: 26px;height: 34px;background-repeat: no-repeat;background-position: center;margin-right: 18px;}
 
   .about_us_mobile .rallies {}
 
@@ -293,7 +293,7 @@ color: rgba(255, 255, 255, 0.69);}
     width: 31px;
     height: 25px;
     margin-right: 13px;
-    background-image: url("images/user-plus-solid.svg");
+    background-image: url("/static/placeholder/images/user-plus-solid.svg");
     background-repeat: no-repeat;
   }
 
@@ -430,7 +430,7 @@ color: rgba(255, 255, 255, 0.69);}
     }
 
     .header_container .content .logo {
-      background-image: url("images/logo_done_done.svg");
+      background-image: url("/static/placeholder/images/logo_done_done.svg");
       min-width: 280px;
       height: 556px;
       background-size: 100%;
@@ -459,7 +459,7 @@ color: rgba(255, 255, 255, 0.69);}
       width: 25px;
       height: 20px;
       margin-right: 13px;
-      background-image: url("images/user-plus-solid.svg");
+      background-image: url("/static/placeholder/images/user-plus-solid.svg");
     }
 
     .header_container .content .main_header .main_buttons .join_button .text {font-family: 'Ubuntu';font-weight: 700;color: #ffffff;font-size: 15px;}
@@ -471,7 +471,7 @@ color: rgba(255, 255, 255, 0.69);}
       height: 25px;
       background-size: contain;
       margin-right: 12px;
-      background-image: url("images/rouble.svg");
+      background-image: url("/static/placeholder/images/rouble.svg");
     }
 
     .header_container .content .main_header .main_buttons .support_button .text {font-family: 'Ubuntu';font-weight: 700;color: #2A2C36;font-size: 15px;}
@@ -566,14 +566,14 @@ color: rgba(255, 255, 255, 0.69);}
     }
 
     .donate .requisites .sber_container .logo {
-      background-image: url("images/sber_logo.svg");
+      background-image: url("/static/placeholder/images/sber_logo.svg");
       width: 210px;
       height: 33px;
       margin-bottom: 20px;
     }
 
     .donate .requisites .tinkoff_container .logo {
-      background-image: url("images/tinkoff_logo.svg");
+      background-image: url("/static/placeholder/images/tinkoff_logo.svg");
       width: 126px;
       height: 33px;
       margin-bottom: 20px;
@@ -581,7 +581,7 @@ color: rgba(255, 255, 255, 0.69);}
     }
 
     .donate .requisites .bitcoin_container .logo {
-      background-image: url("images/bitcoin_logo.svg");
+      background-image: url("/static/placeholder/images/bitcoin_logo.svg");
       width: 128px;
       background-size: contain;
       height: 27px;
@@ -590,7 +590,7 @@ color: rgba(255, 255, 255, 0.69);}
     }
 
     .donate .requisites .ethereum_container .logo {
-      background-image: url("images/ethereum_logo.png");
+      background-image: url("/static/placeholder/images/ethereum_logo.png");
       width: 152px;
       height: 38px;
       margin-bottom: 15px;
@@ -634,7 +634,7 @@ color: rgba(255, 255, 255, 0.69);}
 
     .donate .money_container .icon_background {display: block;position: absolute;width: 50px;margin-right: 3px;right: 0;height: 29px;/* margin-right: 10px; *//* background: linear-gradient(to left, #333 50%, #eee 75%, #333 75%); */background: linear-gradient(to right, transparent, white 40%);}
 
-    .donate .money_container  .button_copy {display: block;position: absolute;right: 0;width: 22px;background: none;height: 22px;cursor: pointer;background-image: url("images/icons8-скопировать.svg");margin-right: 8px;background-size: cover;padding: 0;border: none;filter: invert(34%);}
+    .donate .money_container  .button_copy {display: block;position: absolute;right: 0;width: 22px;background: none;height: 22px;cursor: pointer;background-image: url("/static/placeholder/images/icons8-скопировать.svg");margin-right: 8px;background-size: cover;padding: 0;border: none;filter: invert(34%);}
 
     .donate .money_container  .form_number {
       display: flex;

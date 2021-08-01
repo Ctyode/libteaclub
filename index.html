@@ -18,7 +18,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
   </head>
+
+  
   <body>
 
     <section class="main_container">
@@ -31,7 +34,7 @@
             <div class="title white_text">Чайный Клуб</div>
             <div class="description white_text">Движение за личные, экономические и политические свободы</div>
             <section class="main_buttons">
-              <a target="_blank" href="https://libtea.club/join">
+              <a target="_blank" href="{% url 'front:join' %}">
               <div class="join_button base_button">
                 <div class="icon"></div>
                 <div class="text white_text">Вступить</div>
@@ -71,7 +74,7 @@
       <section class="about_us">
         <div class="description white_text">Россия – прекрасная страна. Мы верим, что однажды сможем назвать её также свободной, богатой и счастливой. Верим и приближаем этот миг – всеми законными способами.</div>
         <section class="lectures">
-          <img class="photo" id="photo1" src="images/photos/1.jpg" alt="">
+          <img class="photo" id="photo1" src="{% static 'placeholder/images/photos/1.jpg' %}" alt="">
           <section class="text_container">
             <div class="title white_text">Лекции, дебаты и конференции</div>
             <div class="secondary_text">Чтобы рассказать о наших идеях мы проводим <a target="_blank" href="https://www.youtube.com/playlist?list=PLEvkBqjXi-OM11zraNKffHrl1wU-g3RhJ">мероприятия</a>, на которых выступают самые разные люди: юристы и блогеры, политики и экономисты, писатели и рок-звёзды.</div>
@@ -81,10 +84,10 @@
             <div class="secondary_text">Граждане России имеют право самостоятельно выбирать своё будущее. Чтобы отстоять это право, участники Чайного Клуба организовывают наблюдение на выборах, входят в избиркомы, <a target="_blank" href="https://www.youtube.com/watch?v=EMALN0y4lBY">консультируют</a> кандидатов и обучают волонтёров.</div>
           </section>
 
-          <img class="photo" id="photo2" src="images/photos/2.png" alt="">
+          <img class="photo" id="photo2" src="{% static 'placeholder/images/photos/2.png' %}" alt="">
         </section>
         <section class="elections">
-          <img class="photo" id="photo3" src="images/photos/3.jpeg" alt="">
+          <img class="photo" id="photo3" src="{% static 'placeholder/images/photos/3.jpeg' %}" alt="">
           <section class="text_container">
             <div class="secondary_text">Мы готовы становиться депутатами, чтобы реализовывать наши идеи на практике. Наши кандидаты побеждают на выборах и, несмотря на <a target="_blank" href="https://blog.libtea.club/beglov_lishayet_mandatov_11_2020">противодействие</a> властей, борются за интересы своих избирателей.</div>
           </section>
@@ -121,12 +124,12 @@
           </section>
 
           <section class="photo_container_1">
-            <img class="photo" id="photo4" src="images/photos/4.jpg" alt="">
-            <img class="photo" id="photo5" src="images/photos/5.jpg" alt="">
+            <img class="photo" id="photo4" src="{% static 'placeholder/images/photos/4.jpg' %}" alt="">
+            <img class="photo" id="photo5" src="{% static 'placeholder/images/photos/5.jpg' %}" alt="">
           </section>
           <section class="photo_container_2">
-            <img class="photo" id="photo6" src="images/photos/6.jpg" alt="">
-            <img class="photo" id="photo7" src="images/photos/7.jpg" alt="">
+            <img class="photo" id="photo6" src="{% static 'placeholder/images/photos/6.jpg' %}" alt="">
+            <img class="photo" id="photo7" src="{% static 'placeholder/images/photos/7.jpg' %}" alt="">
           </section>
         </section>
 
@@ -137,10 +140,10 @@
               <div class="secondary_text">В современной России любая политическая деятельность <a target="_blank" href="https://blog.libtea.club/sokovykh_budesh_ssat_krovyu_2021">связана</a> с риском административного или уголовного преследования. Мы стремимся снизить эти риски — как для участников Чайного Клуба, так и для всех наших сограждан. </div>
             </section>
           </section>
-          <img class="photo" id="photo9" src="images/redpng.svg" alt="">
+          <img class="photo" id="photo9" src="{% static 'placeholder/images/redpng.svg' %}" alt="">
 
           <section class="red_button">
-            <img class="photo" id="photo8" src="images/photos/8.jpg" alt="">
+            <img class="photo" id="photo8" src="{% static 'placeholder/images/photos/8.jpg' %}" alt="">
             <section class="red_button_description">
               <div class="secondary_text">В 2017 году участник нашего движения Александр Литреев запустил собственный правозащитный проект <a target="_blank" href="https://redbtn.info/">«Красная Кнопка»</a>. С помощью него тысячи незаконно задержанных граждан получают квалифицированную юридическую помощь, а не остаются наедине с репрессивной машиной. </div>
             </section>
@@ -206,7 +209,7 @@
         <section class="content">
           <div class="description white_text">Движение за личные, экономические и политические свободы</div>
           <section class="main_buttons">
-            <a target="_blank" href="https://libtea.club/join">
+            <a target="_blank" href="{% url 'front:join' %}">
             <div class="join_button base_button">
               <div class="icon"></div>
               <div class="text white_text">Вступить</div>
@@ -228,13 +231,13 @@
     <section class="about_us_mobile">
       <div class="description white_text">Россия – прекрасная страна. Мы верим, что однажды сможем назвать её также свободной, богатой и счастливой. Верим и приближаем этот миг – всеми законными способами.</div>
       <section class="lectures">
-        <img class="photo" id="mobile1" src="images/photos/1.jpg" alt="">
+        <img class="photo" id="mobile1" src="{% static 'placeholder/images/photos/1.jpg' %}" alt="">
         <section class="text_container">
           <div class="title white_text">Лекции, дебаты и конференции</div>
           <div class="secondary_text">Чтобы рассказать о наших идеях мы проводим <a target="_blank" href="https://www.youtube.com/playlist?list=PLEvkBqjXi-OM11zraNKffHrl1wU-g3RhJ">мероприятия</a>, на которых выступают самые разные люди: юристы и блогеры, политики и экономисты, писатели и рок-звёзды.</div>
         </section>
 
-        <img class="photo" id="mobile2" src="images/photos/2.png" alt="">
+        <img class="photo" id="mobile2" src="{% static 'placeholder/images/photos/2.png' %}" alt="">
         <section class="text_container" id="text_container1">
           <div class="title white_text">Борьба за свободные выборы</div>
           <div class="secondary_text">Граждане России имеют право самостоятельно выбирать своё будущее. Чтобы отстоять это право, участники Чайного Клуба организовывают наблюдение на выборах, входят в избиркомы, <a target="_blank" href="https://www.youtube.com/watch?v=EMALN0y4lBY">консультируют</a> кандидатов и обучают волонтёров.</div>
@@ -242,7 +245,7 @@
 
       </section>
       <section class="elections">
-        <img class="photo" id="mobile3" src="images/photos/3.jpeg" alt="">
+        <img class="photo" id="mobile3" src="{% static 'placeholder/images/photos/3.jpeg' %}" alt="">
         <section class="text_container">
           <div class="secondary_text">Мы готовы становиться депутатами, чтобы реализовывать наши идеи на практике. Наши кандидаты побеждают на выборах и, несмотря на <a target="_blank" href="https://blog.libtea.club/beglov_lishayet_mandatov_11_2020">противодействие</a> властей, борются за интересы своих избирателей.</div>
         </section>
@@ -281,12 +284,12 @@
         </section>
 
         <section class="photo_container_1">
-          <img class="photo" id="mobile6" src="images/photos/6.jpg" alt="">
+          <img class="photo" id="mobile6" src="{% static 'placeholder/images/photos/6.jpg' %}" alt="">
         </section>
         <section class="photo_container_2">
-          <img class="photo" id="mobile4" src="images/photos/4.jpg" alt="">
-          <img class="photo" id="mobile5" src="images/photos/5.jpg" alt="">
-          <img class="photo" id="mobile7" src="images/photos/7.jpg" alt="">
+          <img class="photo" id="mobile4" src="{% static 'placeholder/images/photos/4.jpg' %}" alt="">
+          <img class="photo" id="mobile5" src="{% static 'placeholder/images/photos/5.jpg' %}" alt="">
+          <img class="photo" id="mobile7" src="{% static 'placeholder/images/photos/7.jpg' %}" alt="">
         </section>
       </section>
 
@@ -297,10 +300,10 @@
             <div class="secondary_text">В современной России любая политическая деятельность <a target="_blank" href="https://blog.libtea.club/sokovykh_budesh_ssat_krovyu_2021">связана</a> с риском административного или уголовного преследования. Мы стремимся снизить эти риски — как для участников Чайного Клуба, так и для всех наших сограждан.</div>
           </section>
         </section>
-        <img class="photo" id="mobile9" src="images/redpng.svg" alt="">
+        <img class="photo" id="mobile9" src="{% static 'placeholder/images/redpng.svg' %}" alt="">
 
         <section class="red_button">
-          <img class="photo" id="mobile8" src="images/photos/8.jpg" alt="">
+          <img class="photo" id="mobile8" src="{% static 'placeholder/images/photos/8.jpg' %}" alt="">
           <section class="red_button_description">
             <div class="secondary_text">В 2017 году участник нашего движения Александр Литреев запустил собственный правозащитный проект <a target="_blank" href="https://redbtn.info/">«Красная Кнопка»</a>. С помощью него тысячи незаконно задержанных граждан получают квалифицированную юридическую помощь, а не остаются наедине с репрессивной машиной. </div>
           </section>
@@ -335,19 +338,18 @@
         <div class="title white_text">Мы — люди разного возраста и уровня достатка, разных вероисповеданий и увлечений. Работающие и учащиеся, мужчины и женщины, инициативные и сочувствующие... Всех нас объединяет желание жить в свободной стране с рыночной экономикой и сменяемой властью.</div>
 
         <section class="us">
-          <img class="photo_us" id="photo_us1_mobile" src="images/photos/us/3.jpg" alt="">
-          <img class="photo_us" id="photo_us2_mobile" src="images/photos/us/2.jpg" alt="">
-          <img class="photo_us" id="photo_us3_mobile" src="images/photos/us/9.jpg" alt="">
-          <img class="photo_us" id="photo_us4_mobile" src="images/photos/us/6.jpg" alt="">
-          <img class="photo_us" id="photo_us5_mobile" src="images/photos/us/7.jpg" alt="">
-          <img class="photo_us" id="photo_us6_mobile" src="images/photos/us/4.jpg" alt="">
-          <img class="photo_us" id="photo_us7_mobile" src="images/photos/us/8.jpg" alt="">
-          <img class="photo_us" id="photo_us8_mobile" src="images/photos/us/1.jpg" alt="">
-          <img class="photo_us" id="photo_us9_mobile" src="images/photos/us/5.jpg" alt="">
+          <img class="photo_us" id="photo_us1_mobile" src="{% static 'placeholder/images/photos/us/3.jpg' %}" alt="">
+          <img class="photo_us" id="photo_us2_mobile" src="{% static 'placeholder/images/photos/us/9.jpg' %}" alt="">
+          <img class="photo_us" id="photo_us4_mobile" src="{% static 'placeholder/images/photos/us/6.jpg' %}" alt="">
+          <img class="photo_us" id="photo_us5_mobile" src="{% static 'placeholder/images/photos/us/7.jpg' %}" alt="">
+          <img class="photo_us" id="photo_us6_mobile" src="{% static 'placeholder/images/photos/us/4.jpg' %}" alt="">
+          <img class="photo_us" id="photo_us7_mobile" src="{% static 'placeholder/images/photos/us/8.jpg' %}" alt="">
+          <img class="photo_us" id="photo_us8_mobile" src="{% static 'placeholder/images/photos/us/1.jpg' %}" alt="">
+          <img class="photo_us" id="photo_us9_mobile" src="{% static 'placeholder/images/photos/us/5.jpg' %}" alt="">
 
           <section class="and_you">
             <div class="title white_text">И вы?...</div>
-            <a target="_blank" href="https://libtea.club/join">
+            <a target="_blank" href="{% url 'front:join' %}">
             <div class="join_button base_button">
               <div class="icon"></div>
               <div class="text">Вступить</div>
@@ -407,7 +409,7 @@
                 <button onclick="copy_btc()" class="button_copy" type="button" name="button_copy"></button>
                 <input onclick="copy_btc()" readonly id="btc-input" class="small_form numbers" type="text" value="1MBkcH7cSkNuxdtrXrNFygiEtemCMpV8V4">
               </div>
-              <img src="images/биткоин.png" class="qr_code">
+              <img src="{% static 'placeholder/images/биткоин.png' %}" class="qr_code">
             </div>
 
           </section>
@@ -421,7 +423,7 @@
                 <button onclick="copy_eth()" class="button_copy" type="button" name="button_copy"></button>
                 <input onclick="copy_eth()" readonly id="eth-input" class="small_form numbers" type="text" value="0xf44fbe11d3f05d2c351ae4a96762a3a78ea4121b">
               </div>
-              <img src="images/эфир.png" class="qr_code">
+              <img src="{% static 'placeholder/images/эфир.png' %}" class="qr_code">
             </div>
 
           </section>
@@ -450,12 +452,12 @@
 
 
             <section class="documents">
-              <a target="_blank" href="https://libtea.club/uploads/files/placeholder__statute_file/teaclub_regulations.pdf">
+              <a target="_blank" href="{{ global_preferences.placeholder__statute_file.url }}">
                 <div class="regulations">
                   Устав движения
                 </div>
               </a>
-              <a target="_blank" href="https://libtea.club/uploads/files/placeholder__statute_file/teaclub_regulations.pdf">
+              <a target="_blank" href="{{ global_preferences.placeholder__principles_file.url }}">
                 <div class="regulations">
                   Декларация о принципах
                 </div>
