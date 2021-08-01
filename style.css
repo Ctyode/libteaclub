@@ -347,6 +347,7 @@ a {
 
 .about_us .pictures_to_send_and_say_us_container {
     position: relative;
+    height: 732px;
 }
 
 .about_us .pictures_to_send_and_say_us_pics_bg {
@@ -355,14 +356,26 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
+    background-image: url(images/collage.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .about_us .pictures_to_send_and_say_us_pics_fg {
     position: relative; /* )=>-- */
     width: 1024px;
+    height: 732px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+}
+
+.about_us .pictures_to_send_and_say_us_pics_fg .and_you {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 450px;
+    height: 250px;
 }
 
 .about_us .pictures_to_send_and_say_us .title {margin: auto;font-family: Ubuntu;font-style: normal;font-weight: normal;font-size: 22px;line-height: 34px;width: 846px;text-align: center;margin-top: 70px;margin-bottom: 40px;}
