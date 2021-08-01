@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-width: 651px) and (max-width: 1000px) {
 
   .secondary_text {}
 
@@ -26,21 +26,20 @@
     color: #FFFFFF;
     text-align: center;
     margin: auto;
-    margin-top: 24px;
-    width: 599px;
-    margin-bottom: 24px;
+    margin-top: 40px;
+    width: 600px;
+    margin-bottom: 40px;
   }
 
   .about_us_mobile .lectures .text_container {
-      margin: 12px;
-      margin-bottom: 24px;
+      margin: 0;
       margin-top: 24px;
   }
 
   .about_us_mobile .lectures {width: 600px;margin: auto;}
 
 
-  #text_container1 {margin: 24px;}
+  #text_container1 {margin: 0;margin-top: 24px;}
 
   .about_us_mobile .lectures .text_container .title {/* Ð‘Ð¾Ñ€ÑŒÐ±Ð° Ð·Ð° ÑÐ²Ð¾Ð±Ð¾Ð´Ð½Ñ‹Ðµ Ð²Ñ‹Ð±Ð¾Ñ€Ñ‹ */
       width: 285px;
@@ -66,10 +65,10 @@ color: rgba(255, 255, 255, 0.69);}
   .about_us_mobile .elections {
     width: 600px;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 75px;
 }
 
-  .about_us_mobile .elections .text_container  {margin: 24px;}
+  .about_us_mobile .elections .text_container  {margin: 0;margin-top: 24px;}
 
   .about_us_mobile .elections .text_container .title {
   width: 285px;
@@ -188,7 +187,9 @@ color: rgba(255, 255, 255, 0.69);}
   .about_us_mobile .aid .red_button {}
 
   .about_us_mobile .aid .red_button .red_button_description {
-      margin: 24px;
+      margin: 0;
+      margin-top: 24px;
+      margin-bottom: 24px;
   }
 
   .about_us_mobile .aid .red_button .secondary_text {
@@ -333,12 +334,14 @@ color: rgba(255, 255, 255, 0.69);}
     #mobile8 {box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}
 
     #mobile9 {
-      width: 100%;
+      width: 80%;
       box-shadow: none;
       box-sizing: border-box;
       padding: 24px;
       object-fit: contain;
       height: auto;
+      margin-left: 10%;
+
   }
     #mobile10 {width: 485px;height: 256px;box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);}
 
@@ -368,6 +371,7 @@ color: rgba(255, 255, 255, 0.69);}
     #photo_us2_mobile {
         width: 30%;
         height: 244px;
+        object-position: top;
     }
     #photo_us3_mobile {
         width: 32%;
@@ -376,6 +380,7 @@ color: rgba(255, 255, 255, 0.69);}
     #photo_us4_mobile {
         width: 40%;
         height: 244px;
+        object-position: top;
     }
     #photo_us5_mobile {
         width: 60%;
@@ -434,7 +439,10 @@ color: rgba(255, 255, 255, 0.69);}
       filter: invert(1);
     }
 
-    .back_rectangle {display:none;}
+    .back_rectangle {
+      position:absolute;
+      right:-250px;
+    }
 
     .header_container .content .main_header {z-index: 101;width: 380px;margin-left: 45px;}
 
