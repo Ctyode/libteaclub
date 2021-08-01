@@ -640,13 +640,37 @@
     box-shadow: 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%), 0 3px 5px -1px rgb(0 0 0 / 20%);
   }
 
-}
+  .about_us_mobile .youtube_video {
+    width: 100%;
+  }
+  
+  .about_us_mobile .youtube_video .youtube_iframe {
+    width: 100%;
+    height: 100%;
+  }
 
-.about_us_mobile .youtube_video {
-  width: 100%;
-}
+  .donate .text_container {
+    width: unset;
+  }
 
-.about_us_mobile .youtube_video .youtube_iframe {
-  width: 100%;
-  height: 100%;
+  .donate .requisites {
+    width: unset;
+  }
+
+  .donate .requisites .menu {
+    border-radius: 0;
+  }
+
+  .donate .requisites .banks .money_container {
+    border-radius: 0;
+  }
+
+  .donate .requisites .banks .money_container img {
+    display: none;
+  }
+
+  .donate .requisites .banks .money_container .form_number {
+    width: unset;
+  }
+
 }
